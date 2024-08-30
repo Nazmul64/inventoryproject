@@ -6,6 +6,7 @@ use App\Http\Controllers\HomeController;
 use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\EmployeesController;
+use App\Http\Controllers\Backend\CustomerController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -37,6 +38,15 @@ Route::prefix('employees')->group(function () {
     Route::get('/add-employees/edit/{id}', [EmployeesController::class, 'edit'])->name('edit.employees');
     Route::post('/add-employees/update/{id}', [EmployeesController::class, 'update'])->name('update.employees');
     Route::get('/add-employees/delete/{id}', [EmployeesController::class, 'delete'])->name('delete.employees');
-
+    Route::get('/add-employees/viewdetails/{id}', [EmployeesController::class, 'deteailsview'])->name('deteailsview.employees');
  });
 
+ Route::prefix('Customers')->group(function () {
+    Route::get('/add-customers', [CustomerController::class, 'add'])->name('add.customers');
+    Route::post('/add-customers/store',[CustomerController::class, 'store'])->name('store.customers');
+    Route::get('/add-customers/index', [CustomerController::class, 'index'])->name('index.customers');
+    Route::get('/add-customers/edit/{id}', [CustomerController::class, 'edit'])->name('edit.customers');
+    Route::post('/add-customers/update/{id}', [CustomerController::class, 'update'])->name('update.customers');
+    Route::get('/add-customers/delete/{id}', [CustomerController::class, 'delete'])->name('delete.customers');
+    Route::get('/add-customers/view/{id}', [CustomerController::class, 'view'])->name('customers.view');
+ });

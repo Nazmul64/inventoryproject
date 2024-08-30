@@ -93,5 +93,9 @@ public function delete(Request $request, $id){
     $delete_data->delete();
     return back()->with('success','Data Delete Successfully!');
 }
+public function deteailsview($id){
+    $view=Employees::where('id',$id)->first();
+    return view('backend.employees.view',compact('view'));
+}
 
 }

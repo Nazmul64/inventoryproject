@@ -27,16 +27,17 @@
                                      <thead>
                                           <tr>
                                               <th>SL NO</th>
-                                              <th>Name</th>
+                                              <th>Username</th>
                                               <th>Email</th>
                                               <th>phone</th>
                                               <th>address</th>
-                                              <th>experience</th>
+                                              <th>shopname</th>
+                                              <th>accound_holder</th>
                                               <th>photo</th>
-                                              <th>vacation</th>
-                                              <th>salary</th>
+                                              <th>account_number</th>
+                                              <th>bank_name</th>
+                                              <th>bank_branch</th>
                                               <th>city</th>
-                                              <th>nid_no</th>
                                               <th>action</th>
                                           </tr>
                                      </thead>
@@ -44,22 +45,23 @@
                                         @foreach ($user as $index=>$user )
                                          <tr>
                                                 <td>{{$index}}</td>
-                                                <td>{{$user->name1}}</td>
+                                                <td>{{$user->username}}</td>
                                                 <td>{{$user->email}}</td>
                                                 <td>{{$user->phone}}</td>
                                                 <td>{{$user->address}}</td>
-                                                <td>{{$user->experience}}</td>
+                                                <td>{{$user->shopname}}</td>
+                                                <td>{{$user->accound_holder}}</td>
                                                 <td>
-                                                    <img src="{{asset('uploads/employees')}}/{{$user->photo}}" class="img-fluid" style="max-width: 50%; height: auto;">
-                                                </td>>
-                                                <td>{{$user->vacation}}</td>
-                                                <td>{{$user->salary}}</td>
+                                                    <img src="{{asset('uploads/customer')}}/{{$user->photo}}" class="img-fluid" style="max-width: 50%; height: auto;">
+                                                </td>
+                                                <td>{{$user->account_number}}</td>
+                                                <td>{{$user->bank_name}}</td>
+                                                <td>{{$user->bank_branch}}</td>
                                                 <td>{{$user->city}}</td>
-                                                <td>{{$user->nid_no}}</td>
                                                <td class="d-flex">
-                                                <a href="{{route('edit.employees',$user->id)}}" class="btn btn-success"><i class="fa fa-edit"></i></a>
-                                                <a href="{{route('delete.employees',$user->id)}}" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
-                                                <a href="{{route('deteailsview.employees',$user->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i>
+                                                <a href="{{route('edit.customers',$user->id)}}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                                <a href="{{route('delete.customers',$user->id)}}" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
+                                                <a href="{{route('customers.view',$user->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i>
                                                 </a>
                                                </td>
                                          </tr>
