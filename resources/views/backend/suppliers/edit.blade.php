@@ -6,12 +6,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Manage Suplicers</h1>
+                        <h1 class="m-0">Manage Suplliers</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">Employees</li>
+                            <li class="breadcrumb-item active">Suplliers</li>
                         </ol>
                     </div>
                 </div>
@@ -27,100 +27,102 @@
                             @endif --}}
                         <div class="card card-primary card-outline">
                             <div class="card-body box-profile">
-                                <form method="POST"action="{{route ('store.suppliers')}}"enctype="multipart/form-data">
+                                <form method="POST"action="{{route('update.suppliers',$edit_data->id)}}"enctype="multipart/form-data">
                                     @csrf
                                      <div class="mt-2">
                                         <label>Name</label>
-                                        <input type="text" class="form-control" name="name"placeholder="Enter Your name">
+                                        <input type="text" class="form-control" name="name"value="{{$edit_data->name}}">
                                         @error('name')
                                            <span class="text-danger">{{ $message }}</span>
                                         @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>Email</label>
-                                        <input type="email" class="form-control" name="email"placeholder="Enter Your email">
+                                        <input type="email" class="form-control" name="email"value="{{$edit_data->email}}">
                                         @error('email')
                                         <span class="text-danger">{{ $message }}</span>
                                        @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>Phone</label>
-                                        <input type="number"name="phone"placeholder="Enter Your phone"class="form-control">
+                                        <input type="number"name="phone"class="form-control"value="{{$edit_data->phone}}">
                                         @error('phone')
                                         <span class="text-danger">{{ $message }}</span>
                                        @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>address</label>
-                                        <input type="text"name="address"placeholder="Enter Your address"class="form-control">
+                                        <input type="text"name="address"class="form-control"value="{{$edit_data->address}}">
                                        @error('address')
                                          <span class="text-danger">{{ $message }}</span>
                                        @enderror
                                      </div>
                                      <div class="mt-2">
+                                        <label>type</label>
+                                        <input type="text"name="address"class="form-control"value="{{$edit_data->address}}">
+                                       @error('type')
+                                         <span class="text-danger">{{ $message }}</span>
+                                       @enderror
+                                     </div>
+                                     <div class="mt-2">
                                         <label>shop</label>
-                                        <input type="text"name="shop"placeholder="Enter Your shop"class="form-control">
+                                        <input type="text"name="shop"class="form-control"value="{{$edit_data->shop}}">
                                         @error('shop')
                                          <span class="text-danger">{{ $message }}</span>
                                        @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>accoundholder</label>
-                                        <input type="text"name="accoundholder"placeholder="Enter Your accoundholder"class="form-control">
+                                        <input type="text"name="accoundholder"class="form-control"value="{{$edit_data->accoundholder}}">
                                         @error('accoundholder')
                                         <span class="text-danger">{{ $message }}</span>
                                       @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>accountnumber</label>
-                                        <input type="text"name="accountnumber"placeholder="Enter Your accountnumber"class="form-control">
+                                        <input type="text"name="accountnumber"class="form-control"value="{{$edit_data->accountnumber}}">
                                         @error('accountnumber')
                                         <span class="text-danger">{{ $message }}</span>
                                       @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>bankname</label>
-                                        <input type="text"name="bankname"placeholder="Enter Your bankname"class="form-control">
+                                        <input type="text"name="bankname"class="form-control"value="{{$edit_data->bankname}}">
                                         @error('bankname')
                                         <span class="text-danger">{{ $message }}</span>
                                       @enderror
                                      </div>
                                      <div class="mt-2">
                                         <label>branchname</label>
-                                        <input type="text"name="branchname"placeholder="Enter Your branchname"class="form-control">
+                                        <input type="text"name="branchname"class="form-control"value="{{$edit_data->branchname}}">
                                         @error('branchname')
                                         <span class="text-danger">{{ $message }}</span>
                                       @enderror
                                      </div>
-                                     <div class="mt-2">
-                                        <label>City</label>
-                                        <input type="text"name="city"placeholder="Enter Your city"class="form-control">
-                                        @error('city')
-                                        <span class="text-danger">{{ $message }}</span>
-                                      @enderror
-                                     </div>
-                                     <div class="mt-2">
-                                        <label>type</label>
-                                        <select class="form-control" id="exampleFormControlSelect1"name="type">
-                                            <option value="">Select List</option>
-                                            <option value="Brochure">Brochure</option>
-                                            <option value="Distributor">Distributor</option>
-                                            <option value="wholes Seller">wholes Seller</option>
-                                          </select>
-                                        @error('type')
-                                          <span class="text-danger">{{ $message }}</span>
-                                        @enderror
-                                     </div>
-                                     <div class="col-md-4 py-2">
-                                        <img id="showImage" src="{{asset('upload/user_images/'.Auth::user()->photo)}}"style="width:150px;height:160px;border:1px solid #000;">
+                                    <div class="mt-2">
+                                        <select class="form-control" id="exampleFormControlSelect1" name="type">
+                                            @php
+                                                // Fetch all supplier data
+                                                $selected = \App\Models\Suppliers::get(); // Make sure to import the Suppliers model if needed
+                                            @endphp
+                                            @foreach ($selected as $data)
+                                                <option value="{{ $data->type }}" {{ $data->type == $edit_data ? 'selected' : '' }}>
+                                                    {{ $data->type }}
+                                                </option>
+                                            @endforeach
+                                        </select>
                                     </div>
-                                     <div class="mt-2">
-                                        <label>Photo</label><br/>
-                                        <input type="file" name="photo"id="image"><br/>
-                                        @error('photo')
-                                        <span class="text-danger">{{ $message }}</span>
-                                      @enderror
-                                     </div>
+                                     <div class="form-group">
+                                        <label> Old Awesome_photo</label><br>
+                                        <img height="100" src="{{ asset('uploads/supplicers') }}/{{ $edit_data->photo}}">
+                                    </div>
+                                     <div class="form-group">
+                                        <label> New Awesome_photo</label>
+                                        <input type="file" class="form-control   @error('new_photo')  is-invalid   @enderror"  placeholder="Enter Your photo"name="new_photo">
+                                         @error('new_photo')
+                                             <span class="text-danger">{{$message}}</span>
+                                        @enderror
+                                    </div>
                                      <div class="mt-2">
                                         <input class="btn btn-success" type="submit" value="submit">
                                      </div>

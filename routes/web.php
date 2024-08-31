@@ -55,4 +55,8 @@ Route::prefix('employees')->group(function () {
     Route::get('/add-suppliers', [SuppliersController::class, 'add'])->name('add.suppliers');
     Route::post('/add-suppliers/store', [SuppliersController::class, 'store'])->name('store.suppliers');
     Route::get('/add-suppliers/index', [SuppliersController::class, 'index'])->name('index.suppliers');
+    Route::get('/add-suppliers/edit/{id}', [SuppliersController::class, 'edit'])->name('edit.suppliers');
+    Route::post('/add-suppliers/update/{id}', [SuppliersController::class, 'update'])->name('update.suppliers');
+    Route::get('/add-suppliers/view/{id}', [SuppliersController::class, 'view'])->name('view.suppliers');
+    Route::get('/add-suppliers/delete/{id}', [SuppliersController::class, 'delete'])->name('delete.suppliers');
  });

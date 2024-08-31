@@ -5,12 +5,12 @@
             <div class="container-fluid">
                 <div class="row mb-2">
                     <div class="col-sm-6">
-                        <h1 class="m-0">Manage Profile</h1>
+                        <h1 class="m-0">Manage Supllicers</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
                             <li class="breadcrumb-item"><a href="#">Home</a></li>
-                            <li class="breadcrumb-item active">profile</li>
+                            <li class="breadcrumb-item active">Supllicers</li>
                         </ol>
                     </div>
                 </div>
@@ -61,9 +61,9 @@
                                                 <td>{{$user->branchname}}</td>
                                                 <td>{{$user->city}}</td>
                                                <td class="d-flex">
-                                                <a href="{{route('edit.customers',$user->id)}}" class="btn btn-success"><i class="fa fa-edit"></i></a>
-                                                <a href="{{route('delete.customers',$user->id)}}" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
-                                                <a href="{{route('customers.view',$user->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i>
+                                                <a href="{{route('edit.suppliers',$user->id)}}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                                <a href="{{route('delete.suppliers',$user->id)}}" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
+                                                <a href="{{route('view.suppliers',$user->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i>
                                                 </a>
                                                </td>
                                          </tr>

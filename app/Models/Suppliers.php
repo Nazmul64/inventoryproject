@@ -21,6 +21,7 @@ class Suppliers extends Model
         'bankname',
         'branchname',
         'city',
+        'new_photo',
     ];
 
 }
