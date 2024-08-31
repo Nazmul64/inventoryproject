@@ -7,6 +7,7 @@ use App\Http\Controllers\Backend\UserController;
 use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\EmployeesController;
 use App\Http\Controllers\Backend\CustomerController;
+use App\Http\Controllers\Backend\SuppliersController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -49,4 +50,9 @@ Route::prefix('employees')->group(function () {
     Route::post('/add-customers/update/{id}', [CustomerController::class, 'update'])->name('update.customers');
     Route::get('/add-customers/delete/{id}', [CustomerController::class, 'delete'])->name('delete.customers');
     Route::get('/add-customers/view/{id}', [CustomerController::class, 'view'])->name('customers.view');
+ });
+ Route::prefix('suppliers')->group(function () {
+    Route::get('/add-suppliers', [SuppliersController::class, 'add'])->name('add.suppliers');
+    Route::post('/add-suppliers/store', [SuppliersController::class, 'store'])->name('store.suppliers');
+    Route::get('/add-suppliers/index', [SuppliersController::class, 'index'])->name('index.suppliers');
  });

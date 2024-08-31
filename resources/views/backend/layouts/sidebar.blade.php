@@ -93,6 +93,29 @@
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>
+                    Suppliers Manages
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{ route('add.suppliers') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Add New</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{ route('index.suppliers') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> All Suppliers</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
                     Customer Manages
                     <i class="fas fa-angle-left right"></i>
                   </p>
