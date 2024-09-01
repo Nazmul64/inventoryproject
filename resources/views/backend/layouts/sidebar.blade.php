@@ -145,15 +145,27 @@
                 </a>
                 <ul class="nav nav-treeview">
                   <li class="nav-item">
-                    <a href="{{ route('add.salary') }}" class="nav-link">
+                    <a href="{{ route('add.advancesalary') }}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p> Add New</p>
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{ route('index.customers') }}" class="nav-link">
+                    <a href="{{ route('show.advancesalary') }}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p> All Advance Salary</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{ route('pay.salary') }}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Pay Salary</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Last Month Salary</p>
                     </a>
                   </li>
                 </ul>

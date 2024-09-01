@@ -145,11 +145,7 @@
 
       <footer class="main-footer">
         <strong>Copyright &copy; {{Carbon\Carbon::now()->year}}<a
-            href="">Student_management</a>.</strong>
-        All rights reserved.
-        <div class="float-right d-none d-sm-inline-block">
-          <b>Version</b> 3.2.0
-        </div>
+            href="">Pose Management System</a>.</strong>All rights reserved.
       </footer>
 
       <aside class="control-sidebar control-sidebar-dark">

@@ -63,7 +63,9 @@ Route::prefix('employees')->group(function () {
     Route::get('/add-suppliers/delete/{id}', [SuppliersController::class, 'delete'])->name('delete.suppliers');
  });
  Route::prefix('Advance')->group(function () {
-    Route::get('/add-Salary', [AdvanceSalaricesController::class, 'added'])->name('add.salary');
+    Route::get('/add-Salary', [AdvanceSalaricesController::class, 'added'])->name('add.advancesalary');
     Route::post('/add-Salary/store', [AdvanceSalaricesController::class, 'store'])->name('store.salary');
+    Route::get('/index-Salary/show', [AdvanceSalaricesController::class, 'show'])->name('show.advancesalary');
+    Route::get('/pay/SalaryPay', [AdvanceSalaricesController::class, 'SalaryPay'])->name('pay.salary');
 
  });

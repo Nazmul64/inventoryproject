@@ -15,7 +15,7 @@ class AdvanceSalaricesController extends Controller
     }
  public function added(){
     $employee =employees::get();
-    return view('backend.Salary.added',compact('employee'));
+    return view('backend.Advancesalary.added',compact('employee'));
  }
  public function store(Request $request){
  $emp_id= $request->emp_id;
@@ -38,7 +38,26 @@ class AdvanceSalaricesController extends Controller
              ]);
              return back()->with('success','Data Insert Successfully!');
  }else{
-    return back()->with('error','This salary record already exists for the selected month');
+    return back()->with('error',' !Opps This salary record already exists for the selected month');
  }
 }
+public function show(){
+    $salary=Advancesalarices::join('employees','advancesalarices.emp_id','employees.id')
+    ->select('advancesalarices.*','employees.name1','employees.salary','employees.photo')->orderBy('id','DESC')->get();
+    return view('backend.Advancesalary.all_advancesalaray',compact('salary'));
 }
+public function SalaryPay()
+{
+    // $month = date("F", strtotime('-1 month'));
+    // $main_salary = Advancesalarices::join('employees', 'advancesalarices.emp_id', 'employees.id')
+    // ->select('advancesalarices.*', 'employees.name1', 'employees.salary', 'employees.photo')
+    // ->where('month', $month)
+    // ->get();
+    $employees =employees::get();
+    return view('backend.Advancesalary.paysalary', compact('employees'));
+
+
+
+}
+}
+
