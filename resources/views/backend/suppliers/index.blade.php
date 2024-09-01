@@ -54,7 +54,7 @@
                                                 <td>{{$user->shopname}}</td>
                                                 <td>{{$user->accountnumber}}</td>
                                                 <td>
-                                                    <img src="{{asset('uploads/supplicers')}}/{{$user->photo}}" class="img-fluid" style="max-width: 50%; height: auto;">
+                                                    <img src="{{asset('uploads/supplicers')}}/{{$user->photo}}" class="img-fluid" style="max-width: 80%; height: auto;">
                                                 </td>
                                                 <td>{{$user->accountnumber}}</td>
                                                 <td>{{$user->bankname}}</td>

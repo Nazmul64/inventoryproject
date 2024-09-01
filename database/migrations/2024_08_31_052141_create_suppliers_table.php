@@ -21,7 +21,7 @@ return new class extends Migration
             $table->string('shop')->nullable();
             $table->string('photo')->nullable();
             $table->string('accoundholder')->nullable();
-            $table->integer('accountnumber')->nullable();
+            $table->string('accountnumber')->nullable();
             $table->string('bankname')->nullable();
             $table->string('branchname')->nullable();
             $table->string('city')->nullable();

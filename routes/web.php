@@ -8,6 +8,8 @@ use App\Http\Controllers\Backend\ProfileController;
 use App\Http\Controllers\Backend\EmployeesController;
 use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\SuppliersController;
+use App\Http\Controllers\Backend\AdvanceSalaricesController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -59,4 +61,9 @@ Route::prefix('employees')->group(function () {
     Route::post('/add-suppliers/update/{id}', [SuppliersController::class, 'update'])->name('update.suppliers');
     Route::get('/add-suppliers/view/{id}', [SuppliersController::class, 'view'])->name('view.suppliers');
     Route::get('/add-suppliers/delete/{id}', [SuppliersController::class, 'delete'])->name('delete.suppliers');
+ });
+ Route::prefix('Advance')->group(function () {
+    Route::get('/add-Salary', [AdvanceSalaricesController::class, 'added'])->name('add.salary');
+    Route::post('/add-Salary/store', [AdvanceSalaricesController::class, 'store'])->name('store.salary');
+
  });
