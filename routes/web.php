@@ -9,7 +9,7 @@ use App\Http\Controllers\Backend\EmployeesController;
 use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\SuppliersController;
 use App\Http\Controllers\Backend\AdvanceSalaricesController;
-
+use App\Http\Controllers\Backend\CategoryController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -66,6 +66,16 @@ Route::prefix('employees')->group(function () {
     Route::get('/add-Salary', [AdvanceSalaricesController::class, 'added'])->name('add.advancesalary');
     Route::post('/add-Salary/store', [AdvanceSalaricesController::class, 'store'])->name('store.salary');
     Route::get('/index-Salary/show', [AdvanceSalaricesController::class, 'show'])->name('show.advancesalary');
-    Route::get('/pay/SalaryPay', [AdvanceSalaricesController::class, 'SalaryPay'])->name('pay.salary');
+    Route::get('/SalaryPay', [AdvanceSalaricesController::class, 'SalaryPay'])->name('pay.salary');
+    Route::get('/SalaryPay/edit/{id}', [AdvanceSalaricesController::class, 'SalaryPayedit'])->name('pay.edit');
+    Route::post('/SalaryPay/update/{id}', [AdvanceSalaricesController::class, 'SalaryPayupdate'])->name('pay.update');
 
+ });
+ Route::prefix('category')->group(function () {
+    Route::get('/add-category', [CategoryController::class, 'added'])->name('add.category');
+    Route::post('/add-category/store', [CategoryController::class, 'store'])->name('store.category');
+    Route::get('/add-category/index', [CategoryController::class, 'index'])->name('index.category');
+    Route::get('/edit-category/{id}', [CategoryController::class, 'categoryedit'])->name('edit.category');
+    Route::post('/edit-category/update/{id}', [CategoryController::class, 'update'])->name('update.category');
+    Route::get('/delete-category/delete/{id}', [CategoryController::class, 'delete'])->name('delete.category');
  });

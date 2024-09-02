@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::RB87xfUBJn9R6VRr',
+            '_route' => 'generated::mCss0symSvjuvFYh',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::xm0PLzN5im2TW9W4',
+            '_route' => 'generated::fgxUIhcGibIu33Ce',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::WnLoh74BTgvUEj4i',
+            '_route' => 'generated::47BqbNrkgebz5jZF',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::wvbTvKehks6Q2P6Y',
+            '_route' => 'generated::II8Tqxw0BUqykXb5',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::cKldt99NdYYoTvM7',
+            '_route' => 'generated::JWEsTAAsFfyX3PCf',
           ),
           1 => NULL,
           2 => 
@@ -603,7 +603,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/Advance/pay/SalaryPay' => 
+      '/Advance/SalaryPay' => 
       array (
         0 => 
         array (
@@ -623,10 +623,69 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/category/add-category' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'add.category',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/category/add-category/store' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'store.category',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/category/add-category/index' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'index.category',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|rofile/profile\\.(?|edit/([^/]++)(*:73)|update/([^/]++)(*:95)))|/users/(?|edit/([^/]++)(*:127)|user(?|\\.update/([^/]++)(*:159)|/delete/([^/]++)(*:183)))|/employees/add\\-employees/(?|edit/([^/]++)(*:235)|update/([^/]++)(*:258)|delete/([^/]++)(*:281)|viewdetails/([^/]++)(*:309))|/Customers/add\\-customers/(?|edit/([^/]++)(*:360)|update/([^/]++)(*:383)|delete/([^/]++)(*:406)|view/([^/]++)(*:427))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:478)|update/([^/]++)(*:501)|view/([^/]++)(*:522)|delete/([^/]++)(*:545)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|rofile/profile\\.(?|edit/([^/]++)(*:73)|update/([^/]++)(*:95)))|/users/(?|edit/([^/]++)(*:127)|user(?|\\.update/([^/]++)(*:159)|/delete/([^/]++)(*:183)))|/employees/add\\-employees/(?|edit/([^/]++)(*:235)|update/([^/]++)(*:258)|delete/([^/]++)(*:281)|viewdetails/([^/]++)(*:309))|/Customers/add\\-customers/(?|edit/([^/]++)(*:360)|update/([^/]++)(*:383)|delete/([^/]++)(*:406)|view/([^/]++)(*:427))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:478)|update/([^/]++)(*:501)|view/([^/]++)(*:522)|delete/([^/]++)(*:545))|/Advance/SalaryPay/(?|edit/([^/]++)(*:589)|update/([^/]++)(*:612))|/category/(?|edit\\-category/(?|([^/]++)(*:660)|update/([^/]++)(*:683))|delete\\-category/delete/([^/]++)(*:724)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1038,6 +1097,119 @@ app('router')->setCompiledRoutes(
           5 => true,
           6 => NULL,
         ),
+      ),
+      589 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pay.edit',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      612 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pay.update',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      660 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'edit.category',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      683 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.category',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      724 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'delete.category',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
         1 => 
         array (
           0 => NULL,
@@ -1054,7 +1226,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::RB87xfUBJn9R6VRr' => 
+    'generated::mCss0symSvjuvFYh' => 
     array (
       'methods' => 
       array (
@@ -1069,7 +1241,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::RB87xfUBJn9R6VRr',
+        'as' => 'generated::mCss0symSvjuvFYh',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1085,7 +1257,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::xm0PLzN5im2TW9W4' => 
+    'generated::fgxUIhcGibIu33Ce' => 
     array (
       'methods' => 
       array (
@@ -1107,7 +1279,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::xm0PLzN5im2TW9W4',
+        'as' => 'generated::fgxUIhcGibIu33Ce',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1160,7 +1332,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::WnLoh74BTgvUEj4i' => 
+    'generated::47BqbNrkgebz5jZF' => 
     array (
       'methods' => 
       array (
@@ -1180,7 +1352,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::WnLoh74BTgvUEj4i',
+        'as' => 'generated::47BqbNrkgebz5jZF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1269,7 +1441,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::wvbTvKehks6Q2P6Y' => 
+    'generated::II8Tqxw0BUqykXb5' => 
     array (
       'methods' => 
       array (
@@ -1289,7 +1461,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::wvbTvKehks6Q2P6Y',
+        'as' => 'generated::II8Tqxw0BUqykXb5',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1488,7 +1660,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::cKldt99NdYYoTvM7' => 
+    'generated::JWEsTAAsFfyX3PCf' => 
     array (
       'methods' => 
       array (
@@ -1508,7 +1680,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::cKldt99NdYYoTvM7',
+        'as' => 'generated::JWEsTAAsFfyX3PCf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2852,7 +3024,7 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'Advance/pay/SalaryPay',
+      'uri' => 'Advance/SalaryPay',
       'action' => 
       array (
         'middleware' => 
@@ -2867,6 +3039,299 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'pay.salary',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pay.edit' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Advance/SalaryPay/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdvanceSalaricesController@SalaryPayedit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdvanceSalaricesController@SalaryPayedit',
+        'namespace' => NULL,
+        'prefix' => '/Advance',
+        'where' => 
+        array (
+        ),
+        'as' => 'pay.edit',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pay.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Advance/SalaryPay/update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AdvanceSalaricesController@SalaryPayupdate',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AdvanceSalaricesController@SalaryPayupdate',
+        'namespace' => NULL,
+        'prefix' => '/Advance',
+        'where' => 
+        array (
+        ),
+        'as' => 'pay.update',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'add.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'category/add-category',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@added',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@added',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'add.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'store.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'category/add-category/store',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@store',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@store',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'store.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'index.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'category/add-category/index',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@index',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'index.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'edit.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'category/edit-category/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@categoryedit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@categoryedit',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'edit.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'category/edit-category/update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@update',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'update.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'delete.category' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'category/delete-category/delete/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CategoryController@delete',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CategoryController@delete',
+        'namespace' => NULL,
+        'prefix' => '/category',
+        'where' => 
+        array (
+        ),
+        'as' => 'delete.category',
       ),
       'fallback' => false,
       'defaults' => 

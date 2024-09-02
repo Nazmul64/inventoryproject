@@ -56,8 +56,41 @@ public function SalaryPay()
     $employees =employees::get();
     return view('backend.Advancesalary.paysalary', compact('employees'));
 
+}
+public function SalaryPayedit($id){
+    $edit_data = employees::join('advancesalarices', 'advancesalarices.emp_id', '=', 'employees.id')
+        ->select('employees.*', 'advancesalarices.month')
+        ->where('advancesalarices.id', $id)
+        ->first();
+    return view('backend.Advancesalary.edit', compact('edit_data'));
+}
+public function SalaryPayupdate(Request $request,$id){
+    $request->validate([
+        'name'=> 'required',
+        'month'=> 'required',
+        'salary'=> 'required',
+        'photo'=> 'required',
+    ]);
+    if($request->hasFile('new_photo')){
+        unlink('uploads/employees/'.employees::find($id)->photo);
+        $file = $request->file('new_photo');
+        $path = "uploads/customer/";
+        $new_photo = time() . '.' . $file->getClientOriginalExtension();
+        $file->move($path, $new_photo);
 
+       }
+    $edit_update=employees::join('advancesalarices','advancesalarices.epm_id','employees.id')
+    ->select('employees.*', 'advancesalarices.month')
+    ->where('advancesalarices.id', $id)
+    ->first();
+    $edit_update->update([
+       'name1'=>$request->name1,
+       'salary'=>$request->salary,
+       'month'=>$request->month,
+       'photo'=>$new_photo,
+    ]);
 
+    return back()->with('error','Data Update Successfully!');
 }
 }
 
