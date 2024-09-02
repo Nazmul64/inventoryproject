@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::mCss0symSvjuvFYh',
+            '_route' => 'generated::zLoIneQMhg24GNxm',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::fgxUIhcGibIu33Ce',
+            '_route' => 'generated::L4kTHnZXM4kmk2Oz',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::47BqbNrkgebz5jZF',
+            '_route' => 'generated::E5ciGHUpKH3XDzwa',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::II8Tqxw0BUqykXb5',
+            '_route' => 'generated::VixOpVW1iFtbMKJR',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::JWEsTAAsFfyX3PCf',
+            '_route' => 'generated::PJYr4ihY5xiXOOef',
           ),
           1 => NULL,
           2 => 
@@ -675,6 +675,45 @@ app('router')->setCompiledRoutes(
           array (
             'GET' => 0,
             'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/product/product' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'add.product',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/product/add-product/productstore' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'productstore.product',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -1226,7 +1265,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::mCss0symSvjuvFYh' => 
+    'generated::zLoIneQMhg24GNxm' => 
     array (
       'methods' => 
       array (
@@ -1241,7 +1280,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::mCss0symSvjuvFYh',
+        'as' => 'generated::zLoIneQMhg24GNxm',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1257,7 +1296,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::fgxUIhcGibIu33Ce' => 
+    'generated::L4kTHnZXM4kmk2Oz' => 
     array (
       'methods' => 
       array (
@@ -1279,7 +1318,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::fgxUIhcGibIu33Ce',
+        'as' => 'generated::L4kTHnZXM4kmk2Oz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1332,7 +1371,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::47BqbNrkgebz5jZF' => 
+    'generated::E5ciGHUpKH3XDzwa' => 
     array (
       'methods' => 
       array (
@@ -1352,7 +1391,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::47BqbNrkgebz5jZF',
+        'as' => 'generated::E5ciGHUpKH3XDzwa',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1441,7 +1480,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::II8Tqxw0BUqykXb5' => 
+    'generated::VixOpVW1iFtbMKJR' => 
     array (
       'methods' => 
       array (
@@ -1461,7 +1500,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::II8Tqxw0BUqykXb5',
+        'as' => 'generated::VixOpVW1iFtbMKJR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1660,7 +1699,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::JWEsTAAsFfyX3PCf' => 
+    'generated::PJYr4ihY5xiXOOef' => 
     array (
       'methods' => 
       array (
@@ -1680,7 +1719,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::JWEsTAAsFfyX3PCf',
+        'as' => 'generated::PJYr4ihY5xiXOOef',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3332,6 +3371,79 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'delete.category',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'add.product' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'product/product',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductController@added',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductController@added',
+        'namespace' => NULL,
+        'prefix' => '/product',
+        'where' => 
+        array (
+        ),
+        'as' => 'add.product',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'productstore.product' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'product/add-product/productstore',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductController@productstore',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductController@productstore',
+        'namespace' => NULL,
+        'prefix' => '/product',
+        'where' => 
+        array (
+        ),
+        'as' => 'productstore.product',
       ),
       'fallback' => false,
       'defaults' => 

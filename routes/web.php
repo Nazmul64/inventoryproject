@@ -10,6 +10,7 @@ use App\Http\Controllers\Backend\CustomerController;
 use App\Http\Controllers\Backend\SuppliersController;
 use App\Http\Controllers\Backend\AdvanceSalaricesController;
 use App\Http\Controllers\Backend\CategoryController;
+use App\Http\Controllers\Backend\ProductController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -79,3 +80,8 @@ Route::prefix('employees')->group(function () {
     Route::post('/edit-category/update/{id}', [CategoryController::class, 'update'])->name('update.category');
     Route::get('/delete-category/delete/{id}', [CategoryController::class, 'delete'])->name('delete.category');
  });
+
+ Route::prefix('product')->group(function () {
+    Route::get('/product', [ProductController::class, 'added'])->name('add.product');
+    Route::post('/add-product/productstore', [ProductController::class, 'productstore'])->name('productstore.product');
+});
