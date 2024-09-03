@@ -84,4 +84,7 @@ Route::prefix('employees')->group(function () {
  Route::prefix('product')->group(function () {
     Route::get('/product', [ProductController::class, 'added'])->name('add.product');
     Route::post('/add-product/productstore', [ProductController::class, 'productstore'])->name('productstore.product');
+    Route::get('/product/index', [ProductController::class, 'index'])->name('index.product');
+    Route::get('/product/delete/{id}', [ProductController::class, 'delete'])->name('delete.product');
+    Route::get('/product/view/{id}', [ProductController::class, 'view'])->name('view.product');
 });

@@ -50,4 +50,20 @@ class ProductController extends Controller
         ]);
         return back()->with('success','Data Insert successfully!');
     }
+public function index(){
+    $product_show=Product::all();
+    return view('backend.products.index',compact('product_show'));
+}
+public function delete($id){
+  $product_delete=Product::find($id);
+  $product_delete->delete();
+  return back()->with('success','Data Deleted successfully!');
+}
+public function view($id){
+   $product_show=Product::join('categories','products.category_id')
+   ->select('categories.product_name','products*')
+   ->where('id', $id)
+   ->first();
+   print_r( $product_show);
+}
 }

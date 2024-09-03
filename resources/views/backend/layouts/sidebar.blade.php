@@ -210,7 +210,7 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="{{route('index.category')}}" class="nav-link">
+                    <a href="{{route('index.product')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
                       <p> All Product</p>
                     </a>
