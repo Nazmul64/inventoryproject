@@ -28,8 +28,6 @@
                                           <tr>
                                               <th>SL NO</th>
                                               <th>product_name</th>
-                                              <th>category_id</th>
-                                              <th>supplier_id</th>
                                               <th>product_code</th>
                                               <th>product_garage</th>
                                               <th>product_route</th>
@@ -38,7 +36,6 @@
                                               <th>buying_price</th>
                                               <th>selling_price</th>
                                               <th>product_image</th>
-                                              <th>action</th>
                                           </tr>
                                      </thead>
                                      <tbody>
@@ -46,8 +43,6 @@
                                          <tr>
                                                 <td>{{$index}}</td>
                                                 <td>{{$product_show->product_name}}</td>
-                                                <td>{{$product_show->category_id}}</td>
-                                                <td>{{$product_show->supplier_id}}</td>
                                                 <td>{{$product_show->product_code}}</td>
                                                 <td>{{$product_show->product_garage}}</td>
                                                 <td>{{$product_show->product_route}}</td>

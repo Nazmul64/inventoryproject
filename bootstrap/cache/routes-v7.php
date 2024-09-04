@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::SsxYqTAcdY8uycEz',
+            '_route' => 'generated::osFyEzKVvEu4t9qG',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ui8X4gfkxDkwpKwz',
+            '_route' => 'generated::5Fqn5V9otOLRE6RM',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::QQubDn06wP26fw1l',
+            '_route' => 'generated::E2n49ogoOJQ9wUHf',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::vC45gyBBJRQ5sJsl',
+            '_route' => 'generated::ruNRss7etTegjR1R',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eNQTPnsh5qqNuZCo',
+            '_route' => 'generated::p6XSyd2fER1hPcsc',
           ),
           1 => NULL,
           2 => 
@@ -741,10 +741,49 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/Expenses/add-expenses' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'add.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Expenses/add-expenses/storeexpenses' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'storeexpenses.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158))))|/users/(?|edit/([^/]++)(*:192)|user(?|\\.update/([^/]++)(*:224)|/delete/([^/]++)(*:248)))|/employees/add\\-employees/(?|edit/([^/]++)(*:300)|update/([^/]++)(*:323)|delete/([^/]++)(*:346)|viewdetails/([^/]++)(*:374))|/Customers/add\\-customers/(?|edit/([^/]++)(*:425)|update/([^/]++)(*:448)|delete/([^/]++)(*:471)|view/([^/]++)(*:492))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:543)|update/([^/]++)(*:566)|view/([^/]++)(*:587)|delete/([^/]++)(*:610))|/Advance/SalaryPay/(?|edit/([^/]++)(*:654)|update/([^/]++)(*:677))|/category/(?|edit\\-category/(?|([^/]++)(*:725)|update/([^/]++)(*:748))|delete\\-category/delete/([^/]++)(*:789)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/employees/add\\-employees/(?|edit/([^/]++)(*:344)|update/([^/]++)(*:367)|delete/([^/]++)(*:390)|viewdetails/([^/]++)(*:418))|/Customers/add\\-customers/(?|edit/([^/]++)(*:469)|update/([^/]++)(*:492)|delete/([^/]++)(*:515)|view/([^/]++)(*:536))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:587)|update/([^/]++)(*:610)|view/([^/]++)(*:631)|delete/([^/]++)(*:654))|/Advance/SalaryPay/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721))|/category/(?|edit\\-category/(?|([^/]++)(*:769)|update/([^/]++)(*:792))|delete\\-category/delete/([^/]++)(*:833)))/?$}sDu',
     ),
     3 => 
     array (
@@ -862,7 +901,52 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      192 => 
+      179 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'edit.product',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      202 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.product',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      236 => 
       array (
         0 => 
         array (
@@ -885,7 +969,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      224 => 
+      268 => 
       array (
         0 => 
         array (
@@ -907,7 +991,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      248 => 
+      292 => 
       array (
         0 => 
         array (
@@ -930,7 +1014,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      300 => 
+      344 => 
       array (
         0 => 
         array (
@@ -953,7 +1037,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      323 => 
+      367 => 
       array (
         0 => 
         array (
@@ -975,7 +1059,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      346 => 
+      390 => 
       array (
         0 => 
         array (
@@ -998,7 +1082,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      374 => 
+      418 => 
       array (
         0 => 
         array (
@@ -1021,7 +1105,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      425 => 
+      469 => 
       array (
         0 => 
         array (
@@ -1044,7 +1128,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      448 => 
+      492 => 
       array (
         0 => 
         array (
@@ -1066,7 +1150,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      471 => 
+      515 => 
       array (
         0 => 
         array (
@@ -1089,7 +1173,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      492 => 
+      536 => 
       array (
         0 => 
         array (
@@ -1112,7 +1196,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      543 => 
+      587 => 
       array (
         0 => 
         array (
@@ -1135,7 +1219,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      566 => 
+      610 => 
       array (
         0 => 
         array (
@@ -1157,7 +1241,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      587 => 
+      631 => 
       array (
         0 => 
         array (
@@ -1180,7 +1264,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      610 => 
+      654 => 
       array (
         0 => 
         array (
@@ -1203,7 +1287,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      654 => 
+      698 => 
       array (
         0 => 
         array (
@@ -1226,7 +1310,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      677 => 
+      721 => 
       array (
         0 => 
         array (
@@ -1248,7 +1332,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      725 => 
+      769 => 
       array (
         0 => 
         array (
@@ -1271,7 +1355,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      748 => 
+      792 => 
       array (
         0 => 
         array (
@@ -1293,7 +1377,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      789 => 
+      833 => 
       array (
         0 => 
         array (
@@ -1331,7 +1415,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::SsxYqTAcdY8uycEz' => 
+    'generated::osFyEzKVvEu4t9qG' => 
     array (
       'methods' => 
       array (
@@ -1346,7 +1430,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::SsxYqTAcdY8uycEz',
+        'as' => 'generated::osFyEzKVvEu4t9qG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1362,7 +1446,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ui8X4gfkxDkwpKwz' => 
+    'generated::5Fqn5V9otOLRE6RM' => 
     array (
       'methods' => 
       array (
@@ -1384,7 +1468,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ui8X4gfkxDkwpKwz',
+        'as' => 'generated::5Fqn5V9otOLRE6RM',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1437,7 +1521,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::QQubDn06wP26fw1l' => 
+    'generated::E2n49ogoOJQ9wUHf' => 
     array (
       'methods' => 
       array (
@@ -1457,7 +1541,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::QQubDn06wP26fw1l',
+        'as' => 'generated::E2n49ogoOJQ9wUHf',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1546,7 +1630,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::vC45gyBBJRQ5sJsl' => 
+    'generated::ruNRss7etTegjR1R' => 
     array (
       'methods' => 
       array (
@@ -1566,7 +1650,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::vC45gyBBJRQ5sJsl',
+        'as' => 'generated::ruNRss7etTegjR1R',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1765,7 +1849,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::eNQTPnsh5qqNuZCo' => 
+    'generated::p6XSyd2fER1hPcsc' => 
     array (
       'methods' => 
       array (
@@ -1785,7 +1869,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::eNQTPnsh5qqNuZCo',
+        'as' => 'generated::p6XSyd2fER1hPcsc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3621,6 +3705,152 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'view.product',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'edit.product' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'product/product/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductController@edit',
+        'namespace' => NULL,
+        'prefix' => '/product',
+        'where' => 
+        array (
+        ),
+        'as' => 'edit.product',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update.product' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'product/product/update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ProductController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ProductController@update',
+        'namespace' => NULL,
+        'prefix' => '/product',
+        'where' => 
+        array (
+        ),
+        'as' => 'update.product',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'add.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Expenses/add-expenses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensesController@Addexpenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensesController@Addexpenses',
+        'namespace' => NULL,
+        'prefix' => '/Expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'add.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'storeexpenses.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Expenses/add-expenses/storeexpenses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensesController@storeexpenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensesController@storeexpenses',
+        'namespace' => NULL,
+        'prefix' => '/Expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'storeexpenses.expenses',
       ),
       'fallback' => false,
       'defaults' => 

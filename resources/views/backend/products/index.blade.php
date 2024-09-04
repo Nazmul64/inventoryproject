@@ -28,8 +28,6 @@
                                           <tr>
                                               <th>SL NO</th>
                                               <th>product_name</th>
-                                              <th>category_id</th>
-                                              <th>supplier_id</th>
                                               <th>product_code</th>
                                               <th>product_garage</th>
                                               <th>product_route</th>
@@ -46,8 +44,6 @@
                                          <tr>
                                                 <td>{{$index}}</td>
                                                 <td>{{$product_show->product_name}}</td>
-                                                <td>{{$product_show->category_id}}</td>
-                                                <td>{{$product_show->supplier_id}}</td>
                                                 <td>{{$product_show->product_code}}</td>
                                                 <td>{{$product_show->product_garage}}</td>
                                                 <td>{{$product_show->product_route}}</td>
@@ -59,7 +55,7 @@
                                                     <img src="{{asset('uploads/product')}}/{{$product_show->product_image}}" class="img-fluid" style="max-width: 50%; height: auto;">
                                                 </td>
                                                <td class="d-flex">
-                                                <a href="" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                                <a href="{{route('edit.product',$product_show->id)}}" class="btn btn-success"><i class="fa fa-edit"></i></a>
                                                 <a href="{{route('delete.product',$product_show->id)}}" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
                                                 <a href="{{route('view.product',$product_show->id)}}" class="btn btn-primary"><i class="fa fa-eye"></i>
                                                 </a>

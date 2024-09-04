@@ -11,6 +11,7 @@ use App\Http\Controllers\Backend\SuppliersController;
 use App\Http\Controllers\Backend\AdvanceSalaricesController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
+use App\Http\Controllers\Backend\ExpensesController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -87,4 +88,11 @@ Route::prefix('employees')->group(function () {
     Route::get('/product/index', [ProductController::class, 'index'])->name('index.product');
     Route::get('/product/delete/{id}', [ProductController::class, 'delete'])->name('delete.product');
     Route::get('/product/view/{id}', [ProductController::class, 'view'])->name('view.product');
+    Route::get('/product/edit/{id}', [ProductController::class, 'edit'])->name('edit.product');
+    Route::post('/product/update/{id}', [ProductController::class, 'update'])->name('update.product');
+});
+
+Route::prefix('Expenses')->group(function () {
+    Route::get('/add-expenses', [ExpensesController::class, 'Addexpenses'])->name('add.expenses');
+    Route::post('/add-expenses/storeexpenses', [ExpensesController::class, 'storeexpenses'])->name('storeexpenses.expenses');
 });
