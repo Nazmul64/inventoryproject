@@ -234,12 +234,17 @@
                     </a>
                   </li>
                   <li class="nav-item">
-                    <a href="" class="nav-link">
+                    <a href="{{route('todayexpenses.expenses')}}" class="nav-link">
                       <i class="far fa-circle nav-icon"></i>
-                      <p> All Expenses</p>
+                      <p> Today Expenses</p>
                     </a>
                   </li>
-
+                  <li class="nav-item">
+                    <a href="{{route('lastmonthexpenses.expenses')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Monthly Expenses</p>
+                    </a>
+                  </li>
                 </ul>
               </li>
               <li class="nav-item">

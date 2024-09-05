@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::osFyEzKVvEu4t9qG',
+            '_route' => 'generated::uQE1bbd2AaKti9lk',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5Fqn5V9otOLRE6RM',
+            '_route' => 'generated::j50G6jxGXQyZei0o',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::E2n49ogoOJQ9wUHf',
+            '_route' => 'generated::t9vCk5dcRTLVBxYq',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ruNRss7etTegjR1R',
+            '_route' => 'generated::t4LxzMpfj6X82FTP',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::p6XSyd2fER1hPcsc',
+            '_route' => 'generated::TobzUjPvArJ7QPF2',
           ),
           1 => NULL,
           2 => 
@@ -741,7 +741,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/Expenses/add-expenses' => 
+      '/expenses/add-expenses' => 
       array (
         0 => 
         array (
@@ -761,7 +761,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      '/Expenses/add-expenses/storeexpenses' => 
+      '/expenses/store' => 
       array (
         0 => 
         array (
@@ -780,10 +780,70 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/expenses/todayexpenses' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'todayexpenses.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/lastmonth' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'lastmonthexpenses.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/yearlay' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'yearlay.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/employees/add\\-employees/(?|edit/([^/]++)(*:344)|update/([^/]++)(*:367)|delete/([^/]++)(*:390)|viewdetails/([^/]++)(*:418))|/Customers/add\\-customers/(?|edit/([^/]++)(*:469)|update/([^/]++)(*:492)|delete/([^/]++)(*:515)|view/([^/]++)(*:536))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:587)|update/([^/]++)(*:610)|view/([^/]++)(*:631)|delete/([^/]++)(*:654))|/Advance/SalaryPay/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721))|/category/(?|edit\\-category/(?|([^/]++)(*:769)|update/([^/]++)(*:792))|delete\\-category/delete/([^/]++)(*:833)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1014,7 +1074,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      344 => 
+      347 => 
       array (
         0 => 
         array (
@@ -1037,7 +1097,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      367 => 
+      370 => 
       array (
         0 => 
         array (
@@ -1059,7 +1119,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      390 => 
+      393 => 
       array (
         0 => 
         array (
@@ -1082,7 +1142,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      418 => 
+      421 => 
       array (
         0 => 
         array (
@@ -1105,7 +1165,75 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      469 => 
+      468 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'editexpenses',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      491 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.expenses',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      528 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'delete',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      580 => 
       array (
         0 => 
         array (
@@ -1128,7 +1256,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      492 => 
+      603 => 
       array (
         0 => 
         array (
@@ -1150,7 +1278,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      515 => 
+      626 => 
       array (
         0 => 
         array (
@@ -1173,7 +1301,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      536 => 
+      647 => 
       array (
         0 => 
         array (
@@ -1196,7 +1324,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      587 => 
+      698 => 
       array (
         0 => 
         array (
@@ -1219,7 +1347,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      610 => 
+      721 => 
       array (
         0 => 
         array (
@@ -1241,7 +1369,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      631 => 
+      742 => 
       array (
         0 => 
         array (
@@ -1264,7 +1392,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      654 => 
+      765 => 
       array (
         0 => 
         array (
@@ -1287,7 +1415,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      698 => 
+      809 => 
       array (
         0 => 
         array (
@@ -1310,7 +1438,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      721 => 
+      832 => 
       array (
         0 => 
         array (
@@ -1332,7 +1460,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      769 => 
+      880 => 
       array (
         0 => 
         array (
@@ -1355,7 +1483,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      792 => 
+      903 => 
       array (
         0 => 
         array (
@@ -1377,7 +1505,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      833 => 
+      944 => 
       array (
         0 => 
         array (
@@ -1415,7 +1543,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::osFyEzKVvEu4t9qG' => 
+    'generated::uQE1bbd2AaKti9lk' => 
     array (
       'methods' => 
       array (
@@ -1430,7 +1558,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::osFyEzKVvEu4t9qG',
+        'as' => 'generated::uQE1bbd2AaKti9lk',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1446,7 +1574,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5Fqn5V9otOLRE6RM' => 
+    'generated::j50G6jxGXQyZei0o' => 
     array (
       'methods' => 
       array (
@@ -1468,7 +1596,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5Fqn5V9otOLRE6RM',
+        'as' => 'generated::j50G6jxGXQyZei0o',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1521,7 +1649,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::E2n49ogoOJQ9wUHf' => 
+    'generated::t9vCk5dcRTLVBxYq' => 
     array (
       'methods' => 
       array (
@@ -1541,7 +1669,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::E2n49ogoOJQ9wUHf',
+        'as' => 'generated::t9vCk5dcRTLVBxYq',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1630,7 +1758,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ruNRss7etTegjR1R' => 
+    'generated::t4LxzMpfj6X82FTP' => 
     array (
       'methods' => 
       array (
@@ -1650,7 +1778,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ruNRss7etTegjR1R',
+        'as' => 'generated::t4LxzMpfj6X82FTP',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1849,7 +1977,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::p6XSyd2fER1hPcsc' => 
+    'generated::TobzUjPvArJ7QPF2' => 
     array (
       'methods' => 
       array (
@@ -1869,7 +1997,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::p6XSyd2fER1hPcsc',
+        'as' => 'generated::TobzUjPvArJ7QPF2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -3800,17 +3928,17 @@ app('router')->setCompiledRoutes(
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'Expenses/add-expenses',
+      'uri' => 'expenses/add-expenses',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensesController@Addexpenses',
-        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensesController@Addexpenses',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@Addexpenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@Addexpenses',
         'namespace' => NULL,
-        'prefix' => '/Expenses',
+        'prefix' => '/expenses',
         'where' => 
         array (
         ),
@@ -3836,21 +3964,242 @@ app('router')->setCompiledRoutes(
       array (
         0 => 'POST',
       ),
-      'uri' => 'Expenses/add-expenses/storeexpenses',
+      'uri' => 'expenses/store',
       'action' => 
       array (
         'middleware' => 
         array (
           0 => 'web',
         ),
-        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensesController@storeexpenses',
-        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensesController@storeexpenses',
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@expenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@expenses',
         'namespace' => NULL,
-        'prefix' => '/Expenses',
+        'prefix' => '/expenses',
         'where' => 
         array (
         ),
         'as' => 'storeexpenses.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'todayexpenses.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/todayexpenses',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@todayexpenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@todayexpenses',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'todayexpenses.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'lastmonthexpenses.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/lastmonth',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@lastmonth',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@lastmonth',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'lastmonthexpenses.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'editexpenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/todayexpenses/edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@edit',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'editexpenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'expenses/update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@updateexpenses',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@updateexpenses',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'update.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'delete' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/add-expenses/delete/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@delete',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@delete',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'delete',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'yearlay.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/yearlay',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@yearlay',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@yearlay',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'yearlay.expenses',
       ),
       'fallback' => false,
       'defaults' => 

@@ -11,7 +11,7 @@ use App\Http\Controllers\Backend\SuppliersController;
 use App\Http\Controllers\Backend\AdvanceSalaricesController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
-use App\Http\Controllers\Backend\ExpensesController;
+use App\Http\Controllers\Backend\ExpensessController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -92,7 +92,13 @@ Route::prefix('employees')->group(function () {
     Route::post('/product/update/{id}', [ProductController::class, 'update'])->name('update.product');
 });
 
-Route::prefix('Expenses')->group(function () {
-    Route::get('/add-expenses', [ExpensesController::class, 'Addexpenses'])->name('add.expenses');
-    Route::post('/add-expenses/storeexpenses', [ExpensesController::class, 'storeexpenses'])->name('storeexpenses.expenses');
+Route::prefix('expenses')->group(function () {
+    Route::get('/add-expenses', [ExpensessController::class, 'Addexpenses'])->name('add.expenses');
+    Route::post('store', [ExpensessController::class, 'expenses'])->name('storeexpenses.expenses');
+    Route::get('todayexpenses', [ExpensessController::class, 'todayexpenses'])->name('todayexpenses.expenses');
+    Route::get('lastmonth', [ExpensessController::class, 'lastmonth'])->name('lastmonthexpenses.expenses');
+    Route::get('todayexpenses/edit/{id}', [ExpensessController::class, 'edit'])->name('editexpenses');
+    Route::post('/update/{id}', [ExpensessController::class, 'updateexpenses'])->name('update.expenses');
+    Route::get('/add-expenses/delete/{id}', [ExpensessController::class, 'delete'])->name('delete');
+    Route::get('yearlay', [ExpensessController::class, 'yearlay'])->name('yearlay.expenses');
 });

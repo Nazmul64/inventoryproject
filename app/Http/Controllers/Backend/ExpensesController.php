@@ -15,19 +15,19 @@ class ExpensesController extends Controller
     public function Addexpenses(){
         return view('backend.Expenses.added');
     }
-public function storeexpenses(Request $request){
+public function expenses(Request $request){
     $request->validate([
         'details' => 'required',
         'amount' => 'required',
         'year' => 'required',
     ]);
 
-    Expenses::create([
+   $text=Expenses::create([
         'details' => $request->details,
         'amount' => $request->amount,
         'month' => $request->month,
         'date' => $request->date,
-        'year'=> $request->year, // Ensure this is being passed
+        'year'=> $request->year,
     ]);
 
     return back()->with('success', 'Data inserted successfully!');

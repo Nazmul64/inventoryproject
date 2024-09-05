@@ -13,9 +13,9 @@ return new class extends Migration
     {
         Schema::create('expenses', function (Blueprint $table) {
             $table->id();
+            $table->string('ofyear');
             $table->string('details');
             $table->string('amount');
-            $table->string('year');
             $table->string('month');
             $table->string('date');
             $table->timestamps();

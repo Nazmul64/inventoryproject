@@ -9,8 +9,7 @@ class Expenses extends Model
 {
     use HasFactory;
     protected $fillable = [
-
-        "details","amount","month","date",
+        "details","amount","month","date",'ofyear',
     ];
 
 }
