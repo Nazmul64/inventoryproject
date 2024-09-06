@@ -12,6 +12,7 @@ use App\Http\Controllers\Backend\AdvanceSalaricesController;
 use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ExpensessController;
+use App\Http\Controllers\Backend\AttendenceController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -101,4 +102,25 @@ Route::prefix('expenses')->group(function () {
     Route::post('/update/{id}', [ExpensessController::class, 'updateexpenses'])->name('update.expenses');
     Route::get('/add-expenses/delete/{id}', [ExpensessController::class, 'delete'])->name('delete');
     Route::get('yearlay', [ExpensessController::class, 'yearlay'])->name('yearlay.expenses');
+
+    // month
+    Route::get('january', [ExpensessController::class, 'january'])->name('january.expenses');
+    Route::get('February', [ExpensessController::class, 'February'])->name('February.expenses');
+    Route::get('March', [ExpensessController::class, 'March'])->name('March.expenses');
+    Route::get('April', [ExpensessController::class, 'April'])->name('April.expenses');
+    Route::get('May', [ExpensessController::class, 'May'])->name('May.expenses');
+    Route::get('June', [ExpensessController::class, 'June'])->name('June.expenses');
+    Route::get('July', [ExpensessController::class, 'July'])->name('July.expenses');
+    Route::get('August', [ExpensessController::class, 'August'])->name('August.expenses');
+    Route::get('Septeber', [ExpensessController::class, 'Septeber'])->name('Septeber.expenses');
+    Route::get('October', [ExpensessController::class, 'October'])->name('October.expenses');
+    Route::get('November', [ExpensessController::class, 'November'])->name('November.expenses');
+    Route::get('December', [ExpensessController::class, 'December'])->name('December.expenses');
+
+
+});
+
+Route::prefix('takeadendence')->group(function () {
+    Route::get('/add-takeadendence', [AttendenceController::class, 'takeadendence'])->name('take.attendence');
+    Route::post('/insert-takeadendence', [AttendenceController::class, 'insert'])->name('insert.attendence');
 });

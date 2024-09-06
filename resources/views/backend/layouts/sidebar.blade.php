@@ -90,6 +90,24 @@
                 </ul>
               </li>
               <li class="nav-item">
+                <a href="{{route('backendlayoutshome')}}" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    POS Manages
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Add New</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
                 <a href="#" class="nav-link">
                   <i class="nav-icon fas fa-users"></i>
                   <p>
@@ -245,6 +263,66 @@
                       <p> Monthly Expenses</p>
                     </a>
                   </li>
+                   <li class="nav-item">
+                    <a href="{{route('lastmonthexpenses.expenses')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Monthly Expenses</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="{{route('yearlay.expenses')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Year Expenses</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                     Sells Report
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> First</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>Secount</p>
+                    </a>
+                  </li>
+
+                </ul>
+              </li>
+              <li class="nav-item">
+                <a href="#" class="nav-link">
+                  <i class="nav-icon fas fa-users"></i>
+                  <p>
+                    Attenddence
+                    <i class="fas fa-angle-left right"></i>
+                  </p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item">
+                    <a href="{{route('take.attendence')}}" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p> Take Attenddence</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">
+                      <i class="far fa-circle nav-icon"></i>
+                      <p>All Attenddence</p>
+                    </a>
+                  </li>
+
                 </ul>
               </li>
               <li class="nav-item">

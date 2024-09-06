@@ -22,6 +22,18 @@
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-md-4 ">
+                        <a href="{{route('january.expenses')}}" class="btn btn-success mb-2">january</a>
+                        <a href="{{route('February.expenses')}}" class="btn btn-success mb-2">February</a>
+                        <a  href="{{route('March.expenses')}}" class="btn btn-success mb-2">March</a>
+                        <a href="{{route('April.expenses')}}" class="btn btn-success mb-2">April</a>
+                        <a href="{{route('May.expenses')}}" class="btn btn-success mb-2">May</a>
+                        <a href="{{route('June.expenses')}}" class="btn btn-success mb-2">June</a>
+                        <a href="{{route('July.expenses')}}" class="btn btn-success mb-2">July</a>
+                        <a href="{{route('August.expenses')}}" class="btn btn-success mb-2">August</a>
+                        <a href="{{route('Septeber.expenses')}}" class="btn btn-success mb-2">Septeber</a>
+                        <a href="{{route('October.expenses')}}" class="btn btn-success mb-2">October</a>
+                        <a href="{{route('November.expenses')}}" class="btn btn-success mb-2">November</a>
+                        <a href="{{route('December.expenses')}}" class="btn btn-success mb-2">December</a>
                             <div class="card card-primary card-outline">
                                 <div class="card-body box-profile">
 
@@ -31,6 +43,7 @@
                                           <tr>
 
                                               <th>Detailss</th>
+                                              <th>Date</th>
                                               <th>Amount</th>
 
                                           </tr>
@@ -43,6 +56,7 @@
                                         @foreach ($this_month as $this_month )
                                          <tr>
                                                 <td>{{$this_month->details}}</td>
+                                                <td>{{$this_month->date}}</td>
                                                 <td>{{$this_month->amount}}</td>
 
                                          </tr>

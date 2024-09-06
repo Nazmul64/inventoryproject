@@ -62,8 +62,71 @@ public function delete($id){
     return back()->with('success', 'Data Delete successfully!');
 }
 public function yearlay(){
-    $ofyear =date('Y');
-    $total_coust=Expenses::where('ofyear',$ofyear)->sum('amount');
-    return view('backend.Expenses.this_month',compact('total_coust'));
+
+    $ofyear = date('Y');
+    $total_coust = Expenses::where('ofyear', $ofyear)->get();
+    return view('backend.Expenses.yearlay', ['total_coust' => $total_coust]);
 }
+public function january(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function February(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function March(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function April(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function May(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function June(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function July(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function August(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function Septeber(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function October(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function November(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+public function December(){
+    $month = date('F');
+    $this_month = Expenses::where('month', $month)->get();
+    return view('backend.Expenses.this_month',compact('this_month'));
+}
+
+
 }

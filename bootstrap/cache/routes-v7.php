@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::uQE1bbd2AaKti9lk',
+            '_route' => 'generated::sMtkuaUy7J8ikzF4',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::j50G6jxGXQyZei0o',
+            '_route' => 'generated::kAsWJke9V1MUIJs8',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::t9vCk5dcRTLVBxYq',
+            '_route' => 'generated::5dREXjDqolXobX7N',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::t4LxzMpfj6X82FTP',
+            '_route' => 'generated::eMiY4T9c1TvzxS8Y',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::TobzUjPvArJ7QPF2',
+            '_route' => 'generated::Qw2qmzGZAaxtyTx3',
           ),
           1 => NULL,
           2 => 
@@ -833,6 +833,285 @@ app('router')->setCompiledRoutes(
           array (
             'GET' => 0,
             'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/january' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'january.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/February' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'February.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/March' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'March.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/April' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'April.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/May' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'May.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/June' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'June.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/July' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'July.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/August' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'August.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/Septeber' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'Septeber.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/October' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'October.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/November' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'November.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/expenses/December' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'December.expenses',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/takeadendence/add-takeadendence' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'take.attendence',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/takeadendence/insert-takeadendence' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'insert.attendence',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -1543,7 +1822,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::uQE1bbd2AaKti9lk' => 
+    'generated::sMtkuaUy7J8ikzF4' => 
     array (
       'methods' => 
       array (
@@ -1558,7 +1837,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::uQE1bbd2AaKti9lk',
+        'as' => 'generated::sMtkuaUy7J8ikzF4',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1574,7 +1853,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::j50G6jxGXQyZei0o' => 
+    'generated::kAsWJke9V1MUIJs8' => 
     array (
       'methods' => 
       array (
@@ -1596,7 +1875,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::j50G6jxGXQyZei0o',
+        'as' => 'generated::kAsWJke9V1MUIJs8',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1649,7 +1928,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::t9vCk5dcRTLVBxYq' => 
+    'generated::5dREXjDqolXobX7N' => 
     array (
       'methods' => 
       array (
@@ -1669,7 +1948,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::t9vCk5dcRTLVBxYq',
+        'as' => 'generated::5dREXjDqolXobX7N',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1758,7 +2037,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::t4LxzMpfj6X82FTP' => 
+    'generated::eMiY4T9c1TvzxS8Y' => 
     array (
       'methods' => 
       array (
@@ -1778,7 +2057,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::t4LxzMpfj6X82FTP',
+        'as' => 'generated::eMiY4T9c1TvzxS8Y',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1977,7 +2256,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::TobzUjPvArJ7QPF2' => 
+    'generated::Qw2qmzGZAaxtyTx3' => 
     array (
       'methods' => 
       array (
@@ -1997,7 +2276,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::TobzUjPvArJ7QPF2',
+        'as' => 'generated::Qw2qmzGZAaxtyTx3',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4200,6 +4479,523 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'yearlay.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'january.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/january',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@january',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@january',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'january.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'February.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/February',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@February',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@February',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'February.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'March.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/March',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@March',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@March',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'March.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'April.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/April',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@April',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@April',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'April.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'May.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/May',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@May',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@May',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'May.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'June.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/June',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@June',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@June',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'June.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'July.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/July',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@July',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@July',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'July.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'August.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/August',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@August',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@August',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'August.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'Septeber.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/Septeber',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@Septeber',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@Septeber',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'Septeber.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'October.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/October',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@October',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@October',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'October.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'November.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/November',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@November',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@November',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'November.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'December.expenses' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'expenses/December',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\ExpensessController@December',
+        'controller' => 'App\\Http\\Controllers\\Backend\\ExpensessController@December',
+        'namespace' => NULL,
+        'prefix' => '/expenses',
+        'where' => 
+        array (
+        ),
+        'as' => 'December.expenses',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'take.attendence' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'takeadendence/add-takeadendence',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AttendenceController@takeadendence',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AttendenceController@takeadendence',
+        'namespace' => NULL,
+        'prefix' => '/takeadendence',
+        'where' => 
+        array (
+        ),
+        'as' => 'take.attendence',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'insert.attendence' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'takeadendence/insert-takeadendence',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AttendenceController@insert',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AttendenceController@insert',
+        'namespace' => NULL,
+        'prefix' => '/takeadendence',
+        'where' => 
+        array (
+        ),
+        'as' => 'insert.attendence',
       ),
       'fallback' => false,
       'defaults' => 

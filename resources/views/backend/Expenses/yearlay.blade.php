@@ -6,7 +6,7 @@
                 <div class="row mb-2">
                     <div class="col-sm-6">
 
-                        <h1 class="m-0">Today Expenses</h1>
+                        <h1 class="m-0">Expenses Expenses</h1>
                     </div>
                     <div class="col-sm-6">
                         <ol class="breadcrumb float-sm-right">
@@ -25,7 +25,7 @@
                             <div class="card card-primary card-outline">
                                 <div class="card-body box-profile">
 
-                                    <a  href="{{route('add.category')}}"class="btn btn-success float-right mb-1">Back Pages</a>
+                                    <a  href="{{route('add.expenses')}}"class="btn btn-success float-right mb-1">Back Pages</a>
                                 <table class="table table-responsive table-bordered">
                                      <thead>
                                           <tr>
@@ -36,18 +36,22 @@
                                           </tr>
                                      </thead>
                                      <tbody>
+                                         @php
+                                            $ofyear =date('Y');
+                                              $totalyear_coust = App\Models\Expenses::where('ofyear', $ofyear)->sum('amount');
+                                         @endphp
 
-                                        @foreach ($total_coust as $total_coust )
+                                        @foreach ($total_coust as $total )
                                          <tr>
-                                                <td>{{$total_coust->details}}</td>
-                                                <td>{{$total_coust->amount}}</td>
+                                                <td>{{$total->details}}</td>
+                                                <td>{{$total->amount}}</td>
 
                                          </tr>
 
                                          @endforeach
                                      </tbody>
                                 </table>
-                                <td class="btn btn-success text-white mb-2"> Total Expenses:TK</td>
+                                <td class="btn btn-success text-white mb-2"> Year Expenses:{{$totalyear_coust}}TK</td>
                             </div>
                     </div>
                 </div>
