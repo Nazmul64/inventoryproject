@@ -123,4 +123,5 @@ Route::prefix('expenses')->group(function () {
 Route::prefix('takeadendence')->group(function () {
     Route::get('/add-takeadendence', [AttendenceController::class, 'takeadendence'])->name('take.attendence');
     Route::post('/insert-takeadendence', [AttendenceController::class, 'insert'])->name('insert.attendence');
+    Route::get('/all-takeadendence', [AttendenceController::class, 'allattendence'])->name('all.attendence');
 });

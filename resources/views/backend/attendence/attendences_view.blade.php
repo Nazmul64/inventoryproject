@@ -37,17 +37,17 @@
                                      <tbody>
                                         <form method="POST"action="{{route('insert.attendence')}}"enctype="multipart/form-data">
                                             @csrf
-                                        @foreach ($employess as $index=>$employess )
+                                        @foreach ($employess as $index=>$employee )
                                          <tr>
                                                 <td>{{$index}}</td>
-                                                <td>{{$employess->name1}}</td>
+                                                <td>{{$employee->name1}}</td>
                                                 <td>
-                                                    <img src="{{asset('uploads/employees')}}/{{$employess->photo}}" class="img-fluid" style="width:100px; height: auto;">
+                                                    <img src="{{asset('uploads/employees')}}/{{$employee->photo}}" class="img-fluid" style="width:100px; height: auto;">
                                                 </td>
-                                                <input type="hidden"name="user_id"value="{{$employess->id}}">
+                                                <input type="hidden"name="user_id[]"value="{{$employee->id}}">
                                                 <td>
-                                                    <input type="radio"name="attendence"value="Present">Present
-                                                    <input type="radio"name="attendence"value="Absent">Absent
+                                                    <input type="radio"name="attendence[{{$employee->id}}]"class="checkbox-circle"id="radioSuccess2"value="Present">Present
+                                                    <input type="radio"name="attendence[{{$employee->id}}]"class="checkbox-circle"id="radioSuccess2"value="Absent">Absent
                                                 </td>
                                                 <input type="hidden"name="att_date"value="{{date('d/m/y')}}">
                                                 <input type="hidden"name="att_year"value="{{date('Y')}}">

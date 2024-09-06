@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::sMtkuaUy7J8ikzF4',
+            '_route' => 'generated::MOgLnN64Zg7ADQhR',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::kAsWJke9V1MUIJs8',
+            '_route' => 'generated::Sz5JT05EuJOcvntF',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5dREXjDqolXobX7N',
+            '_route' => 'generated::mgHQWROCUGlWbcAp',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::eMiY4T9c1TvzxS8Y',
+            '_route' => 'generated::YcX8FIqHg1UgUUBn',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Qw2qmzGZAaxtyTx3',
+            '_route' => 'generated::ubhD53t56bMwAwp2',
           ),
           1 => NULL,
           2 => 
@@ -1119,6 +1119,26 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/takeadendence/all-takeadendence' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'all.attendence',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
@@ -1822,7 +1842,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::sMtkuaUy7J8ikzF4' => 
+    'generated::MOgLnN64Zg7ADQhR' => 
     array (
       'methods' => 
       array (
@@ -1836,8 +1856,8 @@ app('router')->setCompiledRoutes(
                     \\Illuminate\\Support\\Facades\\Event::dispatch(new \\Illuminate\\Foundation\\Events\\DiagnosingHealth);
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::sMtkuaUy7J8ikzF4',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"000000000000033f0000000000000000";}}',
+        'as' => 'generated::MOgLnN64Zg7ADQhR',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1853,7 +1873,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::kAsWJke9V1MUIJs8' => 
+    'generated::Sz5JT05EuJOcvntF' => 
     array (
       'methods' => 
       array (
@@ -1869,13 +1889,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ab0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"000000000000055f0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::kAsWJke9V1MUIJs8',
+        'as' => 'generated::Sz5JT05EuJOcvntF',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1928,7 +1948,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5dREXjDqolXobX7N' => 
+    'generated::mgHQWROCUGlWbcAp' => 
     array (
       'methods' => 
       array (
@@ -1948,7 +1968,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5dREXjDqolXobX7N',
+        'as' => 'generated::mgHQWROCUGlWbcAp',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2037,7 +2057,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::eMiY4T9c1TvzxS8Y' => 
+    'generated::YcX8FIqHg1UgUUBn' => 
     array (
       'methods' => 
       array (
@@ -2057,7 +2077,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::eMiY4T9c1TvzxS8Y',
+        'as' => 'generated::YcX8FIqHg1UgUUBn',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2256,7 +2276,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Qw2qmzGZAaxtyTx3' => 
+    'generated::ubhD53t56bMwAwp2' => 
     array (
       'methods' => 
       array (
@@ -2276,7 +2296,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Qw2qmzGZAaxtyTx3',
+        'as' => 'generated::ubhD53t56bMwAwp2',
       ),
       'fallback' => false,
       'defaults' => 
@@ -4996,6 +5016,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'insert.attendence',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'all.attendence' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'takeadendence/all-takeadendence',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AttendenceController@allattendence',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AttendenceController@allattendence',
+        'namespace' => NULL,
+        'prefix' => '/takeadendence',
+        'where' => 
+        array (
+        ),
+        'as' => 'all.attendence',
       ),
       'fallback' => false,
       'defaults' => 
