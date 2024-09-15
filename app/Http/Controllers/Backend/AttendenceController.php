@@ -16,29 +16,34 @@ class AttendenceController extends Controller
 
   public function insert(Request $request)
   {
-      $data = [];
+    $att_date=$request->att_date;
+    $check=Attendence::where('att_date',$att_date)->first();
+    if($check){
+      return back()->with('error',' Today Attendence alreday  Successfully Taken');
+    }else{
+      foreach($request->user_id as $id){
+        $data []=[
+          'user_id'=> $id,
+          'att_date'=>$request->att_date,
+          'attendence'=>$request->attendence[$id],
+          'att_year'=>$request->att_year,
+          'edit_date'=>date('d/m/y'),
 
-      foreach ($request->user_id as $id) {
-          $data[] = [
-              'user_id'    => $id,
-              'attendence' => $request->attendence[$id],
-              'att_date'   => $request->att_date, // Only one date, not per user
-              'att_year'   => $request->att_year, // Only one year, not per user
-              'edit_date'  => date('d_m_y'),
-          ];
-      }
+        ];
+     }
 
-      $att = Attendence::create($data);
+    Attendence::insert($data);
+    return back()->with('success','Attendence Successfully Taken');
+    }
 
-      if ($att) {
-          return back()->with('success', 'Successfully Attendance Taken');
-      } else {
-          return back()->with('error', 'Error while taking attendance');
-      }
   }
 
   public function allattendence(){
-//    $attdenec =Attendence::get();
-  dd('ok');
+    $attendence_view=Attendence::select('att_date')->groupBy('att_date')->get();
+    return view('backend.attendence.attendeces_check',compact('attendence_view'));
+  }
+  public function editattendence($att_date)
+  {
+    return response()->json($att_date);
   }
 }

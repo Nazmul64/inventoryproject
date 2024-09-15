@@ -54,6 +54,7 @@
                                          </tr>
                                          @endforeach
                                          <button class="btn btn-info mt-2 mb-2 float-right" type="submit">Take Attendence</button>
+                                         <a href="{{route('all.attendence',$employee->id)}}" class="btn btn-success mt-2 mb-2 mx-1 float-right" type="submit"> Attendence All</a>
                                         </form>
                                      </tbody>
                                 </table>
