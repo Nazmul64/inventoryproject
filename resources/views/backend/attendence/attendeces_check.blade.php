@@ -35,11 +35,10 @@
                                         @foreach ($attendence_view as $index=>$itmes )
                                          <tr>
                                                 <td>{{$index}}</td>
-                                                <td>{{$itmes->att_date}}</td>
+                                                <td>{{$itmes->edit_date}}</td>
                                                <td class="d-flex">
-                                                <a href="{{ route('edit.attendence', $itmes->att_date) }}" class="btn btn-success"><i class="fa fa-edit"></i></a>
+                                                <a href="{{route('edit.attendence',$itmes->edit_date) }}" class="btn btn-success"><i class="fa fa-edit"></i></a>
                                                 <a href="" class="btn btn-danger mx-2"><i class="fa fa-trash"></i></a>
-
                                                 </a>
                                                </td>
                                          </tr>

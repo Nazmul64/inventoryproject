@@ -24,10 +24,10 @@ class AttendenceController extends Controller
       foreach($request->user_id as $id){
         $data []=[
           'user_id'=> $id,
-          'att_date'=>$request->att_date,
           'attendence'=>$request->attendence[$id],
+          'att_date'=>$request->att_date,
           'att_year'=>$request->att_year,
-          'edit_date'=>date('d/m/y'),
+          'edit_date'=>date('d_m_y'),
 
         ];
      }
@@ -39,11 +39,12 @@ class AttendenceController extends Controller
   }
 
   public function allattendence(){
-    $attendence_view=Attendence::select('att_date')->groupBy('att_date')->get();
+    $attendence_view=Attendence::select('edit_date')->groupBy('edit_date')->get();
     return view('backend.attendence.attendeces_check',compact('attendence_view'));
   }
-  public function editattendence($att_date)
+  public function editattendence($edit_date)
   {
-    return response()->json($att_date);
+    return response()->json($edit_date);
   }
-}
+  }
+
