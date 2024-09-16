@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::lLvUfwcaDrwN8DaS',
+            '_route' => 'generated::Eg8T0oOIL3urVUwX',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::sOiv4c5da0uWZlG7',
+            '_route' => 'generated::F2DCxg5ooIJm2wvL',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::KefcFA6n2tfo685L',
+            '_route' => 'generated::6PjOcbf4QIDfb82K',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::SPot5J5PppWrjLDQ',
+            '_route' => 'generated::LsdbqVE6kPeK7nIQ',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::MlYCOYGiCqebeWmP',
+            '_route' => 'generated::Tj3II5k7GqcKIH0r',
           ),
           1 => NULL,
           2 => 
@@ -1142,7 +1142,7 @@ app('router')->setCompiledRoutes(
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944))|/takeadendence/edit\\-attendence/([^/]++)(*:993))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944))|/takeadendence/(?|editattendence/([^/]++)(*:994)|update/([^/]++)(*:1017)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1827,13 +1827,36 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      993 => 
+      994 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'generated::nePxn3DjRF0CjcxC',
+            '_route' => 'edit.attendence',
+          ),
+          1 => 
+          array (
+            0 => 'edit_date',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1017 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.attendence',
           ),
           1 => 
           array (
@@ -1865,7 +1888,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::lLvUfwcaDrwN8DaS' => 
+    'generated::Eg8T0oOIL3urVUwX' => 
     array (
       'methods' => 
       array (
@@ -1880,7 +1903,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::lLvUfwcaDrwN8DaS',
+        'as' => 'generated::Eg8T0oOIL3urVUwX',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1896,7 +1919,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::sOiv4c5da0uWZlG7' => 
+    'generated::F2DCxg5ooIJm2wvL' => 
     array (
       'methods' => 
       array (
@@ -1918,7 +1941,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::sOiv4c5da0uWZlG7',
+        'as' => 'generated::F2DCxg5ooIJm2wvL',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1971,7 +1994,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::KefcFA6n2tfo685L' => 
+    'generated::6PjOcbf4QIDfb82K' => 
     array (
       'methods' => 
       array (
@@ -1991,7 +2014,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::KefcFA6n2tfo685L',
+        'as' => 'generated::6PjOcbf4QIDfb82K',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2080,7 +2103,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::SPot5J5PppWrjLDQ' => 
+    'generated::LsdbqVE6kPeK7nIQ' => 
     array (
       'methods' => 
       array (
@@ -2100,7 +2123,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::SPot5J5PppWrjLDQ',
+        'as' => 'generated::LsdbqVE6kPeK7nIQ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2299,7 +2322,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::MlYCOYGiCqebeWmP' => 
+    'generated::Tj3II5k7GqcKIH0r' => 
     array (
       'methods' => 
       array (
@@ -2319,7 +2342,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::MlYCOYGiCqebeWmP',
+        'as' => 'generated::Tj3II5k7GqcKIH0r',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5091,14 +5114,14 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::nePxn3DjRF0CjcxC' => 
+    'edit.attendence' => 
     array (
       'methods' => 
       array (
         0 => 'GET',
         1 => 'HEAD',
       ),
-      'uri' => 'takeadendence/edit-attendence/{edit_date}',
+      'uri' => 'takeadendence/editattendence/{edit_date}',
       'action' => 
       array (
         'middleware' => 
@@ -5112,7 +5135,44 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::nePxn3DjRF0CjcxC',
+        'as' => 'edit.attendence',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update.attendence' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'takeadendence/update/{edit_date}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\AttendenceController@updateattendence',
+        'controller' => 'App\\Http\\Controllers\\Backend\\AttendenceController@updateattendence',
+        'namespace' => NULL,
+        'prefix' => '/takeadendence',
+        'where' => 
+        array (
+        ),
+        'as' => 'update.attendence',
       ),
       'fallback' => false,
       'defaults' => 

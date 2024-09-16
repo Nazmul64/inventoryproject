@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('att_year');
             $table->string('attendence');
             $table->string('edit_date');
+            $table->string('month');
             $table->timestamps();
         });
     }

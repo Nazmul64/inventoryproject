@@ -51,6 +51,7 @@
                                                 </td>
                                                 <input type="hidden"name="att_date"value="{{date('d/m/y')}}">
                                                 <input type="hidden"name="att_year"value="{{date('Y')}}">
+                                                <input type="hidden"name="month"value="{{date('F')}}">
                                          </tr>
                                          @endforeach
                                          <button class="btn btn-info mt-2 mb-2 float-right" type="submit">Take Attendence</button>

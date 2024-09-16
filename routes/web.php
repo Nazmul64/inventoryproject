@@ -124,7 +124,7 @@ Route::prefix('takeadendence')->group(function () {
     Route::get('/add-takeadendence', [AttendenceController::class, 'takeadendence'])->name('take.attendence');
     Route::post('/insert-takeadendence', [AttendenceController::class, 'insert'])->name('insert.attendence');
     Route::get('/all-takeadendence', [AttendenceController::class, 'allattendence'])->name('all.attendence');
-    Route::get('/edit-attendence/{edit_date}', [AttendenceController::class, 'editattendence']);
-
+    Route::get('/editattendence/{edit_date}', [AttendenceController::class, 'editattendence'])->name('edit.attendence');
+    Route::get('/update/{edit_date}', [AttendenceController::class, 'updateattendence'])->name('update.attendence');
 
 });

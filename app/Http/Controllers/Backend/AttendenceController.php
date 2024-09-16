@@ -6,6 +6,9 @@ use App\Http\Controllers\Controller;
 use App\Models\Attendence;
 use App\Models\employees;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
+
+use function Laravel\Prompts\select;
 
 class AttendenceController extends Controller
 {
@@ -27,6 +30,7 @@ class AttendenceController extends Controller
           'attendence'=>$request->attendence[$id],
           'att_date'=>$request->att_date,
           'att_year'=>$request->att_year,
+          'month'=>$request->month,
           'edit_date'=>date('d_m_y'),
 
         ];
@@ -44,7 +48,20 @@ class AttendenceController extends Controller
   }
   public function editattendence($edit_date)
   {
-    return response()->json($edit_date);
+    $employess=DB::table('attendences')->where('edit_date',$edit_date)->first();
+    $employess=DB::table('attendences')->join('employees','attendences.user_id','employees.id')->select('employees.name1','employees.photo','attendences.*')->where('edit_date',$edit_date)->get();
+    return view('backend.attendence.edit',compact('employess','employess'));
   }
+ public function updateattendence(Request $request){
+    foreach($request->id as $id){
+        $data =[
+          'attendence'=>$request->attendence[$id],
+          'att_date'=>$request->att_date,
+          'att_year'=>$request->att_year,
+          'month'=>$request->month,
+        ];
+     }
+     return $data;
+ }
   }
 
