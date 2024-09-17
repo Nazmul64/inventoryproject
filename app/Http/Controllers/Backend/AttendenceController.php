@@ -55,13 +55,19 @@ class AttendenceController extends Controller
  public function updateattendence(Request $request){
     foreach($request->id as $id){
         $data =[
-          'attendence'=>$request->attendence[$id],
-          'att_date'=>$request->att_date,
-          'att_year'=>$request->att_year,
-          'month'=>$request->month,
+            'attendence'=>$request->attendence[$id],
+            'att_date'=>$request->att_date,
+            'att_year'=>$request->att_year,
+            'month'=>$request->month,
+
         ];
+
+        $attendence=Attendence::find($id);
+        $attendence->update([$data]);
+        }
+        return back()->with('success','Successfully Update Attendence');
      }
-     return $data;
+
  }
-  }
+
 

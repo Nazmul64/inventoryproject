@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Eg8T0oOIL3urVUwX',
+            '_route' => 'generated::p3NnS3nKOyLClPNw',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::F2DCxg5ooIJm2wvL',
+            '_route' => 'generated::CW8fgwcP2293QJHZ',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::6PjOcbf4QIDfb82K',
+            '_route' => 'generated::XXGsRPvK8EZQTsRl',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::LsdbqVE6kPeK7nIQ',
+            '_route' => 'generated::BDfgRIl23r177fSl',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Tj3II5k7GqcKIH0r',
+            '_route' => 'generated::Cg8Mj44J1qIxcTVT',
           ),
           1 => NULL,
           2 => 
@@ -1139,10 +1139,88 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/takeadendence/update-attendence' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.attendence',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Settings/add-settings' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'setting.added',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Settings/store-settings' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'setting.settingstore',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
+      '/Settings/settings-index' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'index.setting',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944))|/takeadendence/(?|editattendence/([^/]++)(*:994)|update/([^/]++)(*:1017)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944))|/takeadendence/editattendence/([^/]++)(*:991)|/Settings/settings\\-(?|edit/([^/]++)(*:1035)|update/([^/]++)(*:1059)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1827,7 +1905,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      994 => 
+      991 => 
       array (
         0 => 
         array (
@@ -1850,22 +1928,44 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1017 => 
+      1035 => 
       array (
         0 => 
         array (
           0 => 
           array (
-            '_route' => 'update.attendence',
+            '_route' => 'edit.setting',
           ),
           1 => 
           array (
-            0 => 'edit_date',
+            0 => 'id',
           ),
           2 => 
           array (
             'GET' => 0,
             'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      1059 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'update.setting',
+          ),
+          1 => 
+          array (
+            0 => 'id',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
           ),
           3 => NULL,
           4 => false,
@@ -1888,7 +1988,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::Eg8T0oOIL3urVUwX' => 
+    'generated::p3NnS3nKOyLClPNw' => 
     array (
       'methods' => 
       array (
@@ -1903,7 +2003,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::Eg8T0oOIL3urVUwX',
+        'as' => 'generated::p3NnS3nKOyLClPNw',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1919,7 +2019,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::F2DCxg5ooIJm2wvL' => 
+    'generated::CW8fgwcP2293QJHZ' => 
     array (
       'methods' => 
       array (
@@ -1941,7 +2041,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::F2DCxg5ooIJm2wvL',
+        'as' => 'generated::CW8fgwcP2293QJHZ',
       ),
       'fallback' => false,
       'defaults' => 
@@ -1994,7 +2094,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::6PjOcbf4QIDfb82K' => 
+    'generated::XXGsRPvK8EZQTsRl' => 
     array (
       'methods' => 
       array (
@@ -2014,7 +2114,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::6PjOcbf4QIDfb82K',
+        'as' => 'generated::XXGsRPvK8EZQTsRl',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2103,7 +2203,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::LsdbqVE6kPeK7nIQ' => 
+    'generated::BDfgRIl23r177fSl' => 
     array (
       'methods' => 
       array (
@@ -2123,7 +2223,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::LsdbqVE6kPeK7nIQ',
+        'as' => 'generated::BDfgRIl23r177fSl',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2322,7 +2422,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Tj3II5k7GqcKIH0r' => 
+    'generated::Cg8Mj44J1qIxcTVT' => 
     array (
       'methods' => 
       array (
@@ -2342,7 +2442,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Tj3II5k7GqcKIH0r',
+        'as' => 'generated::Cg8Mj44J1qIxcTVT',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5155,10 +5255,9 @@ app('router')->setCompiledRoutes(
     array (
       'methods' => 
       array (
-        0 => 'GET',
-        1 => 'HEAD',
+        0 => 'POST',
       ),
-      'uri' => 'takeadendence/update/{edit_date}',
+      'uri' => 'takeadendence/update-attendence',
       'action' => 
       array (
         'middleware' => 
@@ -5173,6 +5272,189 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'update.attendence',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'setting.added' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Settings/add-settings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\SettingController@setting',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SettingController@setting',
+        'namespace' => NULL,
+        'prefix' => '/Settings',
+        'where' => 
+        array (
+        ),
+        'as' => 'setting.added',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'setting.settingstore' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Settings/store-settings',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\SettingController@settingstore',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SettingController@settingstore',
+        'namespace' => NULL,
+        'prefix' => '/Settings',
+        'where' => 
+        array (
+        ),
+        'as' => 'setting.settingstore',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'index.setting' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Settings/settings-index',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\SettingController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SettingController@index',
+        'namespace' => NULL,
+        'prefix' => '/Settings',
+        'where' => 
+        array (
+        ),
+        'as' => 'index.setting',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'edit.setting' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Settings/settings-edit/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\SettingController@edit',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SettingController@edit',
+        'namespace' => NULL,
+        'prefix' => '/Settings',
+        'where' => 
+        array (
+        ),
+        'as' => 'edit.setting',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'update.setting' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Settings/settings-update/{id}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\SettingController@update',
+        'controller' => 'App\\Http\\Controllers\\Backend\\SettingController@update',
+        'namespace' => NULL,
+        'prefix' => '/Settings',
+        'where' => 
+        array (
+        ),
+        'as' => 'update.setting',
       ),
       'fallback' => false,
       'defaults' => 

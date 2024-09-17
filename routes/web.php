@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ExpensessController;
 use App\Http\Controllers\Backend\AttendenceController;
+use App\Http\Controllers\Backend\SettingController;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -125,6 +126,13 @@ Route::prefix('takeadendence')->group(function () {
     Route::post('/insert-takeadendence', [AttendenceController::class, 'insert'])->name('insert.attendence');
     Route::get('/all-takeadendence', [AttendenceController::class, 'allattendence'])->name('all.attendence');
     Route::get('/editattendence/{edit_date}', [AttendenceController::class, 'editattendence'])->name('edit.attendence');
-    Route::get('/update/{edit_date}', [AttendenceController::class, 'updateattendence'])->name('update.attendence');
+    Route::post('/update-attendence', [AttendenceController::class, 'updateattendence'])->name('update.attendence');
 
+});
+Route::prefix('Settings')->group(function () {
+    Route::get('/add-settings', [SettingController::class, 'setting'])->name('setting.added');
+    Route::post('/store-settings', [SettingController::class, 'settingstore'])->name('setting.settingstore');
+    Route::get('/settings-index', [SettingController::class, 'index'])->name('index.setting');
+    Route::get('/settings-edit/{id}', [SettingController::class, 'edit'])->name('edit.setting');
+    Route::post('/settings-update/{id}', [SettingController::class, 'update'])->name('update.setting');
 });
