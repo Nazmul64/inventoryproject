@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::p3NnS3nKOyLClPNw',
+            '_route' => 'generated::2vr5LAB0S13abH7s',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::CW8fgwcP2293QJHZ',
+            '_route' => 'generated::zTdapA8iUBkfvc2r',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::XXGsRPvK8EZQTsRl',
+            '_route' => 'generated::h479EcZkBLABFn7H',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::BDfgRIl23r177fSl',
+            '_route' => 'generated::IHfWSKNBaixR3LJq',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::Cg8Mj44J1qIxcTVT',
+            '_route' => 'generated::4eQ9ocgGFDfomYrt',
           ),
           1 => NULL,
           2 => 
@@ -1217,6 +1217,26 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/Pos/add-pos' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'pos.index',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
@@ -1988,7 +2008,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::p3NnS3nKOyLClPNw' => 
+    'generated::2vr5LAB0S13abH7s' => 
     array (
       'methods' => 
       array (
@@ -2002,8 +2022,8 @@ app('router')->setCompiledRoutes(
                     \\Illuminate\\Support\\Facades\\Event::dispatch(new \\Illuminate\\Foundation\\Events\\DiagnosingHealth);
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000002e50000000000000000";}}',
-        'as' => 'generated::p3NnS3nKOyLClPNw',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000000f50000000000000000";}}',
+        'as' => 'generated::2vr5LAB0S13abH7s',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2019,7 +2039,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::CW8fgwcP2293QJHZ' => 
+    'generated::zTdapA8iUBkfvc2r' => 
     array (
       'methods' => 
       array (
@@ -2035,13 +2055,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ab0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ba0000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::CW8fgwcP2293QJHZ',
+        'as' => 'generated::zTdapA8iUBkfvc2r',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2094,7 +2114,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::XXGsRPvK8EZQTsRl' => 
+    'generated::h479EcZkBLABFn7H' => 
     array (
       'methods' => 
       array (
@@ -2114,7 +2134,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::XXGsRPvK8EZQTsRl',
+        'as' => 'generated::h479EcZkBLABFn7H',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2203,7 +2223,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::BDfgRIl23r177fSl' => 
+    'generated::IHfWSKNBaixR3LJq' => 
     array (
       'methods' => 
       array (
@@ -2223,7 +2243,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::BDfgRIl23r177fSl',
+        'as' => 'generated::IHfWSKNBaixR3LJq',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2422,7 +2442,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::Cg8Mj44J1qIxcTVT' => 
+    'generated::4eQ9ocgGFDfomYrt' => 
     array (
       'methods' => 
       array (
@@ -2442,7 +2462,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::Cg8Mj44J1qIxcTVT',
+        'as' => 'generated::4eQ9ocgGFDfomYrt',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5455,6 +5475,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'update.setting',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'pos.index' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Pos/add-pos',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\PosController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\PosController@index',
+        'namespace' => NULL,
+        'prefix' => '/Pos',
+        'where' => 
+        array (
+        ),
+        'as' => 'pos.index',
       ),
       'fallback' => false,
       'defaults' => 

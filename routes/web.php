@@ -13,6 +13,7 @@ use App\Http\Controllers\Backend\CategoryController;
 use App\Http\Controllers\Backend\ProductController;
 use App\Http\Controllers\Backend\ExpensessController;
 use App\Http\Controllers\Backend\AttendenceController;
+use App\Http\Controllers\Backend\PosController;
 use App\Http\Controllers\Backend\SettingController;
 Route::get('/', function () {
     return view('welcome');
@@ -135,4 +136,8 @@ Route::prefix('Settings')->group(function () {
     Route::get('/settings-index', [SettingController::class, 'index'])->name('index.setting');
     Route::get('/settings-edit/{id}', [SettingController::class, 'edit'])->name('edit.setting');
     Route::post('/settings-update/{id}', [SettingController::class, 'update'])->name('update.setting');
+});
+
+Route::prefix('Pos')->group(function () {
+     Route::get('/add-pos', [PosController::class, 'index'])->name('pos.index');
 });
