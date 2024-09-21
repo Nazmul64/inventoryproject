@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::37D6L6koFrDDqGRW',
+            '_route' => 'generated::2dVFsN1clSYf37wG',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::NU8rkM7THylObNa7',
+            '_route' => 'generated::jU12ZlWeRTIXBIss',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::4C4xBK4FOsszt5bS',
+            '_route' => 'generated::J2ZLNkB3ogtNnh4J',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::ewcniOdrmdXdifKo',
+            '_route' => 'generated::F4Yle6nuvisdkyYb',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::5iUgMgdFD9GEwFji',
+            '_route' => 'generated::dXUOOl5r0RTt6kh9',
           ),
           1 => NULL,
           2 => 
@@ -1237,6 +1237,26 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/Cart/add-cart' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'add.cart',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
@@ -2008,7 +2028,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::37D6L6koFrDDqGRW' => 
+    'generated::2dVFsN1clSYf37wG' => 
     array (
       'methods' => 
       array (
@@ -2022,8 +2042,8 @@ app('router')->setCompiledRoutes(
                     \\Illuminate\\Support\\Facades\\Event::dispatch(new \\Illuminate\\Foundation\\Events\\DiagnosingHealth);
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
-                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000000f50000000000000000";}}',
-        'as' => 'generated::37D6L6koFrDDqGRW',
+                }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000000f80000000000000000";}}',
+        'as' => 'generated::2dVFsN1clSYf37wG',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2039,7 +2059,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::NU8rkM7THylObNa7' => 
+    'generated::jU12ZlWeRTIXBIss' => 
     array (
       'methods' => 
       array (
@@ -2055,13 +2075,13 @@ app('router')->setCompiledRoutes(
         ),
         'uses' => 'O:55:"Laravel\\SerializableClosure\\UnsignedSerializableClosure":1:{s:12:"serializable";O:46:"Laravel\\SerializableClosure\\Serializers\\Native":5:{s:3:"use";a:0:{}s:8:"function";s:44:"function () {
     return \\view(\'welcome\');
-}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004ba0000000000000000";}}',
+}";s:5:"scope";s:37:"Illuminate\\Routing\\RouteFileRegistrar";s:4:"this";N;s:4:"self";s:32:"00000000000004c30000000000000000";}}',
         'namespace' => NULL,
         'prefix' => '',
         'where' => 
         array (
         ),
-        'as' => 'generated::NU8rkM7THylObNa7',
+        'as' => 'generated::jU12ZlWeRTIXBIss',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2114,7 +2134,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::4C4xBK4FOsszt5bS' => 
+    'generated::J2ZLNkB3ogtNnh4J' => 
     array (
       'methods' => 
       array (
@@ -2134,7 +2154,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::4C4xBK4FOsszt5bS',
+        'as' => 'generated::J2ZLNkB3ogtNnh4J',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2223,7 +2243,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::ewcniOdrmdXdifKo' => 
+    'generated::F4Yle6nuvisdkyYb' => 
     array (
       'methods' => 
       array (
@@ -2243,7 +2263,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::ewcniOdrmdXdifKo',
+        'as' => 'generated::F4Yle6nuvisdkyYb',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2442,7 +2462,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::5iUgMgdFD9GEwFji' => 
+    'generated::dXUOOl5r0RTt6kh9' => 
     array (
       'methods' => 
       array (
@@ -2462,7 +2482,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::5iUgMgdFD9GEwFji',
+        'as' => 'generated::dXUOOl5r0RTt6kh9',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5512,6 +5532,43 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'pos.index',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'add.cart' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Cart/add-cart',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CartController@index',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CartController@index',
+        'namespace' => NULL,
+        'prefix' => '/Cart',
+        'where' => 
+        array (
+        ),
+        'as' => 'add.cart',
       ),
       'fallback' => false,
       'defaults' => 

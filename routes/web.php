@@ -15,6 +15,8 @@ use App\Http\Controllers\Backend\ExpensessController;
 use App\Http\Controllers\Backend\AttendenceController;
 use App\Http\Controllers\Backend\PosController;
 use App\Http\Controllers\Backend\SettingController;
+use App\Http\Controllers\Backend\CartController;
+
 Route::get('/', function () {
     return view('welcome');
 });
@@ -141,3 +143,8 @@ Route::prefix('Settings')->group(function () {
 Route::prefix('Pos')->group(function () {
      Route::get('/add-pos', [PosController::class, 'index'])->name('pos.index');
 });
+
+Route::prefix('Cart')->group(function () {
+    Route::get('/add-cart', [CartController::class, 'index'])->name('add.cart');
+});
+

@@ -89,12 +89,23 @@
                                         <tbody>
                                             @foreach ($product as $product)
                                             <tr>
+                                                <form action="{{route('add.cart')}}">
+                                                    @csrf
+                                                    <input type="hidden"name="id"value="{{$product->id}}">
+                                                    <input type="hidden"name="name"value="{{$product->product_name}}">
+                                                    <input type="hidden"name="price"value="{{$product->selling_price}}">
+                                                    <input type="hidden"name="qty"value="1">
                                                 <td>
-                                                    <i class="fa fa-plus"style="font-size:30px;color:green;"></i> <img src="{{asset('uploads/product')}}/{{$product->product_image}}"style="height:100px;weith:100px;">
+                                                    {{-- <i class="fa fa-plus"style="font-size:30px;color:green;"></i> --}}
+                                                     <img src="{{asset('uploads/product')}}/{{$product->product_image}}"style="height:100px;weith:100px;">
                                                 </td>
                                                 <td>{{$product->product_name}}</td>
                                                 <td>{{$product->cat_name}}</td>
                                                 <td>{{$product->product_code}}</td>
+                                                <td>
+                                                    <button class="btn btn-info btn-sm"type="submit"><i class="fa fa-plus"style="font-size:30px;color:green;"></i></button>
+                                                </td>
+                                                </form>
                                             </tr>
                                             @endforeach
                                         </tbody>

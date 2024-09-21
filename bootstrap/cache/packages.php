@@ -10,6 +10,17 @@
       'Toastr' => 'Brian2694\\Toastr\\Facades\\Toastr',
     ),
   ),
+  'hardevine/shoppingcart' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Gloudemans\\Shoppingcart\\ShoppingcartServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Cart' => 'Gloudemans\\Shoppingcart\\Facades\\Cart',
+    ),
+  ),
   'laravel/sail' => 
   array (
     'providers' => 
