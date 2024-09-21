@@ -26,12 +26,16 @@ class CartController extends Controller
     Cart::remove($rowId);
     return back()->with('success','Remove  Successfully');
   }
-  public function createinvoices(Request $request){
-     $content=Cart::content();
-     $cust_id=$request->customer_id;
-     echo "<pre>";
-     print_r($content);
-     echo "<pre>";
-     print_r( $cust_id);
-  }
+  public function createinvoices(Request $request)
+{
+    $request->validate([
+        'customer_id'=>'required',
+    ]);
+    $customer_id=$request->customer_id;
+    $customer=DB::table('customers')->where('id',$customer_id)->first();
+    $contents=Cart::content();
+   return view('backend.posmain.invoices',compact('contents','customer'));
+}
+
+
 }
