@@ -32,9 +32,10 @@
                             </div>
                             <select class="form-control mt-3">
                                 @foreach ($customer as $cust)
-                                    <option>{{ $cust->username }}</option>
+                                    <option value="{{$cust->id}}">{{ $cust->username }}</option>
                                 @endforeach
                             </select>
+
                             <div class="card mt-3 bg-dark ">
                                 <div class="card-body">
                                     <ul class="fa-ul text-center text-white">
@@ -48,28 +49,39 @@
                                                     <th>Action</th>
                                            </thead>
                                            <tbody>
+                                        @php
+                                            $product_cart =Cart::content();
+                                        @endphp
+                                        @foreach ($product_cart as $prd)
                                                <tr>
-                                                  <td>Name<td>
-                                                    <form>
-                                                        <input type="number"name=""value="2"style="width:40px;">
+                                                  <td>{{$prd->product_name}}<td>
+                                                    <form action="{{route('cart.update',$prd->rowId)}}"method="post">
+                                                        @csrf
+                                                        <input type="number"name="qty"value="{{$prd->qty}}"style="width:40px;">
                                                         <button class="btn btn-sm btn-success" type="submit"><i class="fas fa-check"></i></button>
                                                     </form>
-                                                    <td>4000</td>
-                                                    <td>4000</td>
-                                                    <td><i class="fas fa-trash-alt"style="color:red;"></i></td>
+                                                    <td>{{$prd->price}}</td>
+                                                    <td>{{$prd->price*$prd->qty}}</td>
+                                                    <td><a href="{{route('cart.remove',$prd->rowId)}}"><i class="fas fa-trash-alt"style="color:red;"></i></a></td>
                                                </tr>
+                                            @endforeach
                                            </tbody>
                                        </table>
                                     </ul>
 
                                 </div>
                                 <div class="footer-body align-item-center">
-                                     <p>Qantity:2</p>
-                                     <p>Vat:0000</p>
+                                     <p>Qantity:{{Cart::count();}}</p>
+                                     <p>Sub Total:{{Cart::subtotal()}}</p>
+                                     <p>Vat:{{Cart::tax()}}</p>
                                      <hr>
-                                     <p>Total:00</p>
+                                     <p>Total:{{Cart::total()}}</p>
                                 </div>
-                                <button type="submit" class="btn btn-primary btn-sm mt-3">Create Invoice</button>
+                                <form method="POST" action="{{ route('createinvoices') }}">
+                                    @csrf
+                                    <input type="hidden"name="customer_id"value="{{$cust->id}}">
+                                    <button type="submit" class="btn btn-primary btn-sm mt-3">Create Invoice</button>
+                                </form>
                             </div>
                     </div>
                     <div class="col-md-8">
@@ -83,6 +95,7 @@
                                                 <th>Name</th>
                                                 <th>Category</th>
                                                 <th>Product Code</th>
+                                                <th>Add</th>
 
                                             </tr>
                                         </thead>
@@ -114,6 +127,7 @@
                             </div>
                         </div>
                     </div>
+
                 </div>
             </div>
         </section>

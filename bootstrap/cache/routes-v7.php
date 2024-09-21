@@ -13,7 +13,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::2dVFsN1clSYf37wG',
+            '_route' => 'generated::7msh1N39mP4ALKRr',
           ),
           1 => NULL,
           2 => 
@@ -33,7 +33,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::jU12ZlWeRTIXBIss',
+            '_route' => 'generated::LqSROGmE83Xim81c',
           ),
           1 => NULL,
           2 => 
@@ -70,7 +70,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::J2ZLNkB3ogtNnh4J',
+            '_route' => 'generated::PbisBjcbbfCn9xpc',
           ),
           1 => NULL,
           2 => 
@@ -125,7 +125,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::F4Yle6nuvisdkyYb',
+            '_route' => 'generated::tvfM2QkhjJr5WkVx',
           ),
           1 => NULL,
           2 => 
@@ -216,7 +216,7 @@ app('router')->setCompiledRoutes(
         array (
           0 => 
           array (
-            '_route' => 'generated::dXUOOl5r0RTt6kh9',
+            '_route' => 'generated::mNSdsDdrXVRbhtJz',
           ),
           1 => NULL,
           2 => 
@@ -1257,10 +1257,29 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
+      '/Cart/cart-invoices' => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'createinvoices',
+          ),
+          1 => NULL,
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => false,
+          6 => NULL,
+        ),
+      ),
     ),
     2 => 
     array (
-      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/Customers/add\\-customers/(?|edit/([^/]++)(*:580)|update/([^/]++)(*:603)|delete/([^/]++)(*:626)|view/([^/]++)(*:647))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:698)|update/([^/]++)(*:721)|view/([^/]++)(*:742)|delete/([^/]++)(*:765))|/Advance/SalaryPay/(?|edit/([^/]++)(*:809)|update/([^/]++)(*:832))|/category/(?|edit\\-category/(?|([^/]++)(*:880)|update/([^/]++)(*:903))|delete\\-category/delete/([^/]++)(*:944))|/takeadendence/editattendence/([^/]++)(*:991)|/Settings/settings\\-(?|edit/([^/]++)(*:1035)|update/([^/]++)(*:1059)))/?$}sDu',
+      0 => '{^(?|/p(?|assword/reset/([^/]++)(*:34)|ro(?|file/profile\\.(?|edit/([^/]++)(*:76)|update/([^/]++)(*:98))|duct/product/(?|delete/([^/]++)(*:137)|view/([^/]++)(*:158)|edit/([^/]++)(*:179)|update/([^/]++)(*:202))))|/users/(?|edit/([^/]++)(*:236)|user(?|\\.update/([^/]++)(*:268)|/delete/([^/]++)(*:292)))|/e(?|mployees/add\\-employees/(?|edit/([^/]++)(*:347)|update/([^/]++)(*:370)|delete/([^/]++)(*:393)|viewdetails/([^/]++)(*:421))|xpenses/(?|todayexpenses/edit/([^/]++)(*:468)|update/([^/]++)(*:491)|add\\-expenses/delete/([^/]++)(*:528)))|/C(?|ustomers/add\\-customers/(?|edit/([^/]++)(*:583)|update/([^/]++)(*:606)|delete/([^/]++)(*:629)|view/([^/]++)(*:650))|art/cart\\-(?|update/([^/]++)(*:687)|remove/([^/]++)(*:710)))|/suppliers/add\\-suppliers/(?|edit/([^/]++)(*:762)|update/([^/]++)(*:785)|view/([^/]++)(*:806)|delete/([^/]++)(*:829))|/Advance/SalaryPay/(?|edit/([^/]++)(*:873)|update/([^/]++)(*:896))|/category/(?|edit\\-category/(?|([^/]++)(*:944)|update/([^/]++)(*:967))|delete\\-category/delete/([^/]++)(*:1008))|/takeadendence/editattendence/([^/]++)(*:1056)|/Settings/settings\\-(?|edit/([^/]++)(*:1101)|update/([^/]++)(*:1125)))/?$}sDu',
     ),
     3 => 
     array (
@@ -1650,7 +1669,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      580 => 
+      583 => 
       array (
         0 => 
         array (
@@ -1673,7 +1692,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      603 => 
+      606 => 
       array (
         0 => 
         array (
@@ -1695,7 +1714,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      626 => 
+      629 => 
       array (
         0 => 
         array (
@@ -1718,7 +1737,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      647 => 
+      650 => 
       array (
         0 => 
         array (
@@ -1741,7 +1760,52 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      698 => 
+      687 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cart.update',
+          ),
+          1 => 
+          array (
+            0 => 'rowId',
+          ),
+          2 => 
+          array (
+            'POST' => 0,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      710 => 
+      array (
+        0 => 
+        array (
+          0 => 
+          array (
+            '_route' => 'cart.remove',
+          ),
+          1 => 
+          array (
+            0 => 'rowId',
+          ),
+          2 => 
+          array (
+            'GET' => 0,
+            'HEAD' => 1,
+          ),
+          3 => NULL,
+          4 => false,
+          5 => true,
+          6 => NULL,
+        ),
+      ),
+      762 => 
       array (
         0 => 
         array (
@@ -1764,7 +1828,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      721 => 
+      785 => 
       array (
         0 => 
         array (
@@ -1786,7 +1850,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      742 => 
+      806 => 
       array (
         0 => 
         array (
@@ -1809,7 +1873,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      765 => 
+      829 => 
       array (
         0 => 
         array (
@@ -1832,7 +1896,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      809 => 
+      873 => 
       array (
         0 => 
         array (
@@ -1855,7 +1919,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      832 => 
+      896 => 
       array (
         0 => 
         array (
@@ -1877,7 +1941,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      880 => 
+      944 => 
       array (
         0 => 
         array (
@@ -1900,7 +1964,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      903 => 
+      967 => 
       array (
         0 => 
         array (
@@ -1922,7 +1986,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      944 => 
+      1008 => 
       array (
         0 => 
         array (
@@ -1945,7 +2009,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      991 => 
+      1056 => 
       array (
         0 => 
         array (
@@ -1968,7 +2032,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1035 => 
+      1101 => 
       array (
         0 => 
         array (
@@ -1991,7 +2055,7 @@ app('router')->setCompiledRoutes(
           6 => NULL,
         ),
       ),
-      1059 => 
+      1125 => 
       array (
         0 => 
         array (
@@ -2028,7 +2092,7 @@ app('router')->setCompiledRoutes(
   ),
   'attributes' => 
   array (
-    'generated::2dVFsN1clSYf37wG' => 
+    'generated::7msh1N39mP4ALKRr' => 
     array (
       'methods' => 
       array (
@@ -2043,7 +2107,7 @@ app('router')->setCompiledRoutes(
 
                     return \\Illuminate\\Support\\Facades\\View::file(\'D:\\\\inventory\\\\vendor\\\\laravel\\\\framework\\\\src\\\\Illuminate\\\\Foundation\\\\Configuration\'.\'/../resources/health-up.blade.php\');
                 }";s:5:"scope";s:54:"Illuminate\\Foundation\\Configuration\\ApplicationBuilder";s:4:"this";N;s:4:"self";s:32:"00000000000000f80000000000000000";}}',
-        'as' => 'generated::2dVFsN1clSYf37wG',
+        'as' => 'generated::7msh1N39mP4ALKRr',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2059,7 +2123,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::jU12ZlWeRTIXBIss' => 
+    'generated::LqSROGmE83Xim81c' => 
     array (
       'methods' => 
       array (
@@ -2081,7 +2145,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::jU12ZlWeRTIXBIss',
+        'as' => 'generated::LqSROGmE83Xim81c',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2134,7 +2198,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::J2ZLNkB3ogtNnh4J' => 
+    'generated::PbisBjcbbfCn9xpc' => 
     array (
       'methods' => 
       array (
@@ -2154,7 +2218,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::J2ZLNkB3ogtNnh4J',
+        'as' => 'generated::PbisBjcbbfCn9xpc',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2243,7 +2307,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::F4Yle6nuvisdkyYb' => 
+    'generated::tvfM2QkhjJr5WkVx' => 
     array (
       'methods' => 
       array (
@@ -2263,7 +2327,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::F4Yle6nuvisdkyYb',
+        'as' => 'generated::tvfM2QkhjJr5WkVx',
       ),
       'fallback' => false,
       'defaults' => 
@@ -2462,7 +2526,7 @@ app('router')->setCompiledRoutes(
       'waitSeconds' => NULL,
       'withTrashed' => false,
     ),
-    'generated::dXUOOl5r0RTt6kh9' => 
+    'generated::mNSdsDdrXVRbhtJz' => 
     array (
       'methods' => 
       array (
@@ -2482,7 +2546,7 @@ app('router')->setCompiledRoutes(
         'where' => 
         array (
         ),
-        'as' => 'generated::dXUOOl5r0RTt6kh9',
+        'as' => 'generated::mNSdsDdrXVRbhtJz',
       ),
       'fallback' => false,
       'defaults' => 
@@ -5569,6 +5633,115 @@ app('router')->setCompiledRoutes(
         array (
         ),
         'as' => 'add.cart',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cart.update' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Cart/cart-update/{rowId}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CartController@cartupdate',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CartController@cartupdate',
+        'namespace' => NULL,
+        'prefix' => '/Cart',
+        'where' => 
+        array (
+        ),
+        'as' => 'cart.update',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'cart.remove' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'GET',
+        1 => 'HEAD',
+      ),
+      'uri' => 'Cart/cart-remove/{rowId}',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CartController@cartremove',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CartController@cartremove',
+        'namespace' => NULL,
+        'prefix' => '/Cart',
+        'where' => 
+        array (
+        ),
+        'as' => 'cart.remove',
+      ),
+      'fallback' => false,
+      'defaults' => 
+      array (
+      ),
+      'wheres' => 
+      array (
+      ),
+      'bindingFields' => 
+      array (
+      ),
+      'lockSeconds' => NULL,
+      'waitSeconds' => NULL,
+      'withTrashed' => false,
+    ),
+    'createinvoices' => 
+    array (
+      'methods' => 
+      array (
+        0 => 'POST',
+      ),
+      'uri' => 'Cart/cart-invoices',
+      'action' => 
+      array (
+        'middleware' => 
+        array (
+          0 => 'web',
+        ),
+        'uses' => 'App\\Http\\Controllers\\Backend\\CartController@createinvoices',
+        'controller' => 'App\\Http\\Controllers\\Backend\\CartController@createinvoices',
+        'namespace' => NULL,
+        'prefix' => '/Cart',
+        'where' => 
+        array (
+        ),
+        'as' => 'createinvoices',
       ),
       'fallback' => false,
       'defaults' => 
