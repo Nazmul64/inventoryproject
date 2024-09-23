@@ -83,13 +83,8 @@
                             <p><strong>Total:</strong> {{ Cart::total() }}</p>
 
                             <!-- Create Invoice Button -->
-                            <form method="POST" action="{{ route('createinvoices') }}">
+                            <form action="{{ route('create.invoices') }}" method="POST">
                                 @csrf
-                                <div class="d-flex justify-content-between align-items-center mb-3">
-                                    <h4 class="text-dark">Customer</h4>
-                                    <button class="btn btn-info" data-toggle="modal" data-target="#addCustomerModal">Add Customer</button>
-                                </div>
-
                                 <!-- Customer Select Dropdown -->
                                 <select class="form-control mt-3 custom-select" name="customer_id" id="customerSelect">
                                     <option selected disabled>Select Customer</option>

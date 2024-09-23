@@ -88,7 +88,7 @@
 
                             <div class="row">
 
-                                <div class="col-6">
+                                {{-- <div class="col-6">
                                     <p class="lead">Payment Methods:</p>
                                     <img src="../../dist/img/credit/visa.png" alt="Visa">
                                     <img src="../../dist/img/credit/mastercard.png" alt="Mastercard">
@@ -100,27 +100,24 @@
                                         plugg
                                         dopplr jibjab, movity jajah plickers sifteo edmodo ifttt zimbra.
                                     </p>
-                                </div>
+                                </div> --}}
 
                                 <div class="col-6">
-                                    <p class="lead">Amount Due 2/22/2014</p>
+                                    <p class="lead">Amount Due:{{date('d/m/y')}}</p>
                                     <div class="table-responsive">
                                         <table class="table">
                                             <tr>
                                                 <th style="width:50%">Subtotal:</th>
-                                                <td>$250.30</td>
+                                                <td>{{Cart::subtotal()}}</td>
                                             </tr>
                                             <tr>
-                                                <th>Tax (9.3%)</th>
-                                                <td>$10.34</td>
+                                                <th>Tax </th>
+                                                <td>{{Cart::tax()}}</td>
                                             </tr>
-                                            <tr>
-                                                <th>Shipping:</th>
-                                                <td>$5.80</td>
-                                            </tr>
+
                                             <tr>
                                                 <th>Total:</th>
-                                                <td>$265.24</td>
+                                                <td>{{Cart::total()}}</td>
                                             </tr>
                                         </table>
                                     </div>
@@ -131,9 +128,9 @@
 
                             <div class="row no-print">
                                 <div class="col-12">
-                                    <a href="invoice-print.html" rel="noopener" target="_blank"
+                                    <a href="#" onclick="window.print();" rel="noopener" target="_blank"
                                         class="btn btn-default"><i class="fas fa-print"></i> Print</a>
-                                    <button type="button" class="btn btn-success float-right"><i
+                                    <button type="button" data-toggle="modal"  id="#exampleModalCenter" data-target="#exampleModalCenter" class="btn btn-success float-right"><i
                                             class="far fa-credit-card"></i> Submit
                                         Payment
                                     </button>
@@ -152,5 +149,71 @@
 
 
     </div>
+
+<!-- Customer Modal -->
+<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="exampleModalCenterTitle">Invoice of:-{{$customer->username}}<span class="float-right">Total: {{ Cart::total() }}</span></h5>
+                <button type="button" class="close text-white" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form method="POST" action="{{ route('final.invoices') }}">
+                    @csrf
+                    <!-- Customer Name -->
+                    <div class="form-group">
+                        <label for="payment_status">Payment</label>
+                        <select class="form-control"name="payment_status">
+                            <option value="Select">Select Payment </option>
+                             <option value="Handcash">HandCash</option>
+                             <option value="Cheque">Cheque</option>
+                             <option value="Due">Due</option>
+                        </select>
+                        @error('payment_status')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <!-- Email -->
+                    <div class="form-group">
+                        <label for="email">Pay</label>
+                        <input type="text" class="form-control" name="pay" placeholder="Enter customer pay">
+                        @error('pay')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <!-- Phone -->
+                    <div class="form-group">
+                        <label for="phone">Due</label>
+                        <input type="text" class="form-control" name="due" placeholder="Enter customer due">
+                        @error('due')
+                            <span class="text-danger">{{ $message }}</span>
+                        @enderror
+                    </div>
+
+                    <!-- Address -->
+                    <input type="hidden" name="customer_id" value="{{ $customer->id }}">
+                    <input type="hidden" name="order_date" value="{{ date('Y-m-d') }}">
+                    <input type="hidden" name="order_status" value="pending">
+                    <input type="hidden" name="total_product" value="{{ Cart::count() }}">
+                    <input type="hidden" name="sub_total" value="{{ Cart::subtotal() }}">
+                    <input type="hidden" name="vat" value="{{ Cart::tax() }}">
+                    <input type="hidden" name="total" value="{{ Cart::total() }}">
+
+                    <!-- Submit Button -->
+                    <div class="form-group text-center">
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
 
 @endsection

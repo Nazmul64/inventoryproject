@@ -145,10 +145,11 @@ Route::prefix('Pos')->group(function () {
 });
 
 Route::prefix('Cart')->group(function () {
-    Route::get('/add-cart', [CartController::class, 'index'])->name('add.cart');
+    Route::post('/add-cart', [CartController::class, 'index'])->name('add.cart');
     Route::post('/cart-update/{rowId}', [CartController::class, 'cartupdate'])->name('cart.update');
     Route::get('/cart-remove/{rowId}', [CartController::class, 'cartremove'])->name('cart.remove');
-    Route::post('/cart-invoices', [CartController::class, 'createinvoices'])->name('createinvoices');
+    Route::post('/cart-invoices', [CartController::class, 'createInvoice'])->name('create.invoices');
+    Route::post('/final-invoices', [CartController::class, 'finalinvoices'])->name('final.invoices');
 
 });
 
